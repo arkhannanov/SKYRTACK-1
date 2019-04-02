@@ -1,0 +1,43 @@
+.avatar {
+    width:100%;
+    .avatar_wrapper {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        .avatar__avatar-border 
+        {   
+            margin: auto;
+            width: 250px;
+            height: 250px;   
+            border: 2px solid $borders;
+            border-radius: 50%;
+            .avatar__avatar-photo
+            {   
+                height: 224px;
+                width: 224px;
+                border-radius: 50%;
+                background: $borders;
+                margin: 13px;
+            }   
+        }
+    }
+
+}
+
+.h1 {
+    line-height: 80%;
+    letter-spacing: -1px;
+    font-size: 67px;
+}
+.h2 {
+    font-family: $lightFont;
+    font-size: 58px;
+}
+.h4 {
+    line-height: 200%;
+    letter-spacing: -1px;
+    font-size: 39px;
+}
