@@ -65,7 +65,16 @@ module.exports = {
               outputPath: 'fonts/'
           }
       }]
-    }
+    },
+    {
+			test: /\.(png|jpg|gif|svg)$/,
+			loader: 'file-loader',
+			exclude: [/fonts/],
+			options: {
+        name: '[name].[ext]',
+        outputPath: 'img/'
+			}
+		}
   ]
   },
   devServer: {
