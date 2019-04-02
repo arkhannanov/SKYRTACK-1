@@ -1,5 +1,31 @@
-.headline
-{
-background: blue;
+ .headline
+ {   
+   width: 100%; 
+    .headline_wrapper
+        {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
 
-}
+            .headline_text
+                        {
+                    font-size: 64px;
+                    color: $borders;
+                    margin-left: 18px;
+                    @media screen and (max-width: 1225px) 
+                    {
+                        font-size: 46px;
+                    }
+                        }
+            .headline_line 
+                   {
+                    height: 9px;
+                    width: 100%;
+                    background-color:$borders;
+                    margin-left: 13px;
+                    
+                    } 
+             
+        }
+    }   
+    
