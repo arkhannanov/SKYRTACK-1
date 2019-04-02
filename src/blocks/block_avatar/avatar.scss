@@ -1,3 +1,4 @@
+@import "scss_assets/mixins_functions.scss";
 .avatar {
     width:100%;
     .avatar_wrapper {
@@ -6,7 +7,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
+        margin-bottom: 100px;
         .avatar__avatar-border 
         {   
             margin: auto;
@@ -31,13 +32,25 @@
     line-height: 80%;
     letter-spacing: -1px;
     font-size: 67px;
+
+    $min_font_size: 17px;
+    $max_font_size: 67px;
+    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+
+
 }
 .h2 {
     font-family: $lightFont;
     font-size: 58px;
+    $min_font_size: 17px;
+    $max_font_size: 58px;
+    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
 }
 .h4 {
     line-height: 200%;
     letter-spacing: -1px;
     font-size: 39px;
+    $min_font_size: 17px;
+    $max_font_size: 39px;
+    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
 }

@@ -1,0 +1,15 @@
+.contact
+    .contact_wrapper
+        div
+            include ../block_profile/headline/headline.pug
+            +headline("src/img/Phone_Icon.png", "CONTACT")
+        div.contact_wrapper__item
+            include contact_line/contact_line.pug
+            +contact_line("ADDRESS","Main Street, City.")
+        div.contact_wrapper__item
+            +contact_line("E-MAIL","contact@domain.com")
+        div.contact_wrapper__item
+            +contact_line("PHONE","555-555-555")
+        div.contact_wrapper__item
+            +contact_line("WEBSITE","www.yourweb.com")
+        

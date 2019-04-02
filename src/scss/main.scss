@@ -1,5 +1,6 @@
 @import "scss_assets/fonts.scss";
 @import "scss_assets/vars.scss";
+@import "scss_assets/mixins_functions.scss";
 
 html {
     line-height: $mainLineHeight;
@@ -41,7 +42,7 @@ main {
     margin-left: 93px;
     margin-top: 136px;
     margin-right: 89px;
-    border: 1px solid black;
+   // border: 1px solid black;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: $smDesktopWidth) {
@@ -52,7 +53,7 @@ main {
 .left-col {
     background-color: #FFF;
     width: 38%;
-    border: 2px solid black;
+    //border: 2px solid black;
     margin-right: 7,29%;
     @media screen and (max-width: $smDesktopWidth ) {
         width: 100%;
@@ -65,7 +66,7 @@ main {
 .right-col {
     background-color: #fff;
     width: 56.5%;
-    border: 2px solid red;
+  //  border: 2px solid red;
     @media screen and (max-width: $smDesktopWidth ) {
         width: 100%;
     }
@@ -73,3 +74,4 @@ main {
 
 @import "../blocks/block_avatar/avatar.scss";
 @import "../blocks/block_profile/profile.scss";
+@import "../blocks/block_contact/contact.scss";

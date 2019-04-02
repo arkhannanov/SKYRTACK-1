@@ -1,0 +1,17 @@
+//@import "block_profile/headline/headline.scss";
+@import "scss_assets/mixins_functions.scss";
+@import "contact_line/contact_line.scss";
+
+.contact
+    {
+        width: 100%;
+        .contact_wrapper
+        {
+            width: 100%;
+            .contact_wrapper__item
+            {
+                margin-top:20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
