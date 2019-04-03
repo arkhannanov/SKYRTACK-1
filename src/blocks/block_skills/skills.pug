@@ -1,0 +1,20 @@
+.skills
+    .skills_wrapper
+        div
+            include ../block_profile/headline/headline.pug
+            +headline("src/img/SKILLS_ICON.png", "SKILLS")
+        div.skills_wrapper__items
+            include skills_dots/skills_dots.pug
+            +dots("CREATIVE",9)
+            +dots("TEAMWORK",11)
+            +dots("INNOVATE",6)
+            +dots("COMMUNICATION",11)
+
+
+
+        //- div.contact_wrapper__item
+        //-     +contact_line("E-MAIL","contact@domain.com")
+        //- div.contact_wrapper__item
+        //-     +contact_line("PHONE","555-555-555")
+        //- div.contact_wrapper__item
+        //-     +contact_line("WEBSITE","www.yourweb.com")

@@ -13,11 +13,11 @@
             }
             .profile__text
                 {
-                    font-size: $mainFontSize;
+                    //font-size: $mainFontSize;                    
                     margin-bottom: 70px;
                     $min_font_size: 17px;
-                    $max_font_size: 26px;
-                    @include fluid-type($phoneWidth, $smDesktopWidth, $min_font_size, $max_font_size);
+                    $max_font_size: 24px;
+                    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
                 }
                 .profile__text_bold
                     {

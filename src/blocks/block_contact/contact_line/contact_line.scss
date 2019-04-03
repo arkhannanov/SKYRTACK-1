@@ -10,16 +10,37 @@
             align-items: center;
             .contact_line_wrapper__container1
                 {
-                    min-width: 175px;
+                    min-width: 260px;
                     $min_font_size: 14px;
                     $max_font_size: 32px;
-                    @include fluid-type($smPhoneWidth , $smDesktopWidth, $min_font_size, $max_font_size);
+                    @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
                     color: $borders;
                     font-family: $boldFont;
-                    @media screen and (max-width: 527px) 
+                    @media screen and (max-width: $desktopWidth ) 
+                    {
+                        min-width: 175px;
+                    }
+                    @media screen and (max-width: 1300px ) 
                     {
                         min-width: 115px;
+                        $min_font_size: 20px;
+                        $max_font_size: 24px;
+                        @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
                     }
+                    
+                    @media screen and (max-width: $smDesktopWidth) 
+                    {
+                        min-width: 175px !important;
+                        $min_font_size: 14px;
+                        $max_font_size: 32px;
+                        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+                    }
+                    @media screen and (max-width: 527px) 
+                    {
+                        min-width: 115px !important;
+                    }
+
+                                     
                 }
             .contact_line_warpper_container2
                 {
@@ -28,6 +49,20 @@
                     white-space: nowrap;
                     $min_font_size: 14px;
                     $max_font_size: 32px;
-                    @include fluid-type($smPhoneWidth , $smDesktopWidth, $min_font_size, $max_font_size);
+                    @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
+                    @media screen and (max-width: 1300px ) 
+                    {
+                        min-width: 115px;
+                        $min_font_size: 20px;
+                        $max_font_size: 24px;
+                        @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+
+                    }
+                    @media screen and (max-width: $smDesktopWidth) 
+                    {
+                        $min_font_size: 14px;
+                        $max_font_size: 32px;
+                        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+                    }
                 }
         }

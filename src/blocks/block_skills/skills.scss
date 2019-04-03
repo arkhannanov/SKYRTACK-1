@@ -1,0 +1,31 @@
+@import "scss_assets/mixins_functions.scss";
+@import "skills_dots/skills_dots.scss";
+
+.skills
+        {
+        width: 100%;
+        .skills_wrapper
+        {
+            width: 100%;
+            margin-bottom: 80px;
+            .skills_wrapper__items
+            {
+                margin-top:44px;
+                margin-left: 69px;
+                @media screen and (max-width: 1300px ) 
+                    {
+                        margin-left: 25px;
+                    }
+                @media screen and (max-width: $smDesktopWidth ) 
+                    {
+                        margin-left: 65px;
+                    }
+                @media screen and (max-width: 527px) 
+                    {
+                        margin-left: auto;
+                    }
+            }
+            
+        }
+    }
+   
