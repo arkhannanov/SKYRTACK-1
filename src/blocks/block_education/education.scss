@@ -1,0 +1,16 @@
+@import "scss_assets/mixins_functions.scss";
+@import "education_item/education_item.scss";
+
+.education
+    {
+        width: 100%;
+        .education_wrapper
+            {
+                width: 100%;
+            }
+            .education_wrapper__item
+                {
+                    width: 100%;
+                    margin-bottom: -30%;
+                }
+    }

@@ -10,16 +10,16 @@
             align-items: center;
             .contact_line_wrapper__container1
                 {
-                    min-width: 260px;
-                    $min_font_size: 14px;
-                    $max_font_size: 32px;
-                    @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
+                    min-width: 175px; 
+                    // $min_font_size: 14px;
+                    // $max_font_size: 32px;
+                    // @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
                     color: $borders;
                     font-family: $boldFont;
-                    @media screen and (max-width: $desktopWidth ) 
-                    {
-                        min-width: 175px;
-                    }
+                    // @media screen and (max-width: $desktopWidth ) 
+                    // {
+                    //     min-width: 175px;
+                    // }
                     @media screen and (max-width: 1300px ) 
                     {
                         min-width: 115px;
@@ -42,14 +42,14 @@
 
                                      
                 }
-            .contact_line_warpper_container2
+            .contact_line_warpper__container2
                 {
                     font-family: $mainFont;
                     color: #000000;
                     white-space: nowrap;
-                    $min_font_size: 14px;
-                    $max_font_size: 32px;
-                    @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
+                    // $min_font_size: 14px;
+                    // $max_font_size: 32px;
+                    // @include fluid-type($smPhoneWidth , $desktopWidth, $min_font_size, $max_font_size);
                     @media screen and (max-width: 1300px ) 
                     {
                         min-width: 115px;
