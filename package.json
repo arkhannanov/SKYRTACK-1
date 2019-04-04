@@ -1,7 +1,7 @@
 {
-  "name": "webpacktemplate",
+  "name": "FSD_CV_Template",
   "version": "1.0.0",
-  "description": "My template",
+  "description": "FSD_CV_Template",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --mode development",
