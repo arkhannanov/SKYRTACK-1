@@ -1,14 +1,14 @@
 @import "scss_assets/mixins_functions.scss";
-.education_item
+.experience_item
     {
         width: 100%;
-        .education_item_wrapper
+        .experience_item_wrapper
         {   
             margin-top: 50px;
-            margin-bottom: -35px;
+            margin-bottom: -25px;
             display: flex;
             flex-direction:row;
-            .education_item_wrapper__dot
+            .experience_item_wrapper__dot
             {
                 margin-right: 5%;
                 margin-top: 0.5%;
@@ -32,12 +32,12 @@
                     
                     }
             }
-            .education_item_wrapper__content
+            .experience_item_wrapper__content
             {    
                 display: flex;
                 flex-direction: column;
-                margin-bottom: -5px;
-                .education_item_wrapper__content__1line
+                margin-bottom: -30px;
+                .experience_item_wrapper__content__1line
                     {
                         line-height: 0.9;
                         
@@ -46,12 +46,12 @@
                         //  margin-bottom: -40px;
                         
 
-                        .degree 
+                        .company_name 
                         {   
                             margin-block-start: 0px;
                             margin-block-end: 0px;
                             font-size: 34px;
-                            color: $borders;
+                            color: $mainFontColor;
                             font-family: $boldFont;
                             $min_font_size: 24px;
                             $max_font_size: 34px;
@@ -65,7 +65,7 @@
                             }
                         }
                     }
-                .university_name
+                .job
                     {
                         margin-block-start: 0.5%;
                         margin-block-end: 4%;
@@ -76,7 +76,7 @@
                         $max_font_size: 34px;
                         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
                     }
-                .education_item_wrapper__content__3line
+                .experience_item_wrapper__content__3line
                     {
                         margin-top: -6%;
                         text-align:justify;

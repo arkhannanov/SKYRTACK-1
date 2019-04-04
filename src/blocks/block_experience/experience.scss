@@ -1,15 +1,14 @@
 @import "scss_assets/mixins_functions.scss";
-@import "education_item/education_item.scss";
+@import "experience_item/experience_item.scss";
 
-.education
+.experience
     {
         width: 100%;
-        .education_wrapper
+        .experience_wrapper
             {
                 width: 100%;
-                margin-bottom: 35%;
             }
-            .education_wrapper__item
+            .experience_wrapper__item
                 {
                     width: 100%;
                     margin-bottom: -30%;
