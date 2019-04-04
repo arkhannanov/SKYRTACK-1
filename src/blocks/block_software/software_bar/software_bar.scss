@@ -1,0 +1,64 @@
+@import "scss_assets/mixins_functions.scss";
+.software_bar
+    {
+       width: 100%;
+       margin-bottom: 12px;
+       .software_bar__headline
+        {
+            width: 100%;
+            font-family: $mainFont;
+            $min_font_size: 20px;
+            $max_font_size: 38px;
+            @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+            .headline
+            {
+            margin-block-start: 0.5%;
+            margin-block-end: 8px;
+            }
+        }
+            
+        .software_bar__progress
+            {
+                width: 100%;
+                progress {
+ 
+                    min-width: 80%;
+                    border: 0; /* for IE */
+                    height: 30px;
+                    margin-right: 20%;
+                    background-color: $zero-color;
+                    overflow: hidden;
+                    @media screen and (max-width: $tableWidth) 
+
+                    {
+                        min-width: 130%;
+                        margin-right: 0;
+                    }
+
+                    @media screen and (max-width: $phoneWidth) 
+
+                    {
+                        min-width: 80% !important;
+                        margin-right: 0!important;
+                    }
+
+                    
+                  }
+                  
+                  /* necessary to style the progress bar background */
+                  ::-webkit-progress-bar {
+                    background-color: $zero-color ; 
+                  }
+
+                  .progress_bar::-webkit-progress-value {
+                    background-color: $borders;
+                  }
+                  .progress_bar::-moz-progress-bar {
+                    background-color: $borders;
+                  }
+                  .progress_bar::-ms-fill {
+                    background-color: $borders;
+                    border:0;
+                  }
+            }
+    }
