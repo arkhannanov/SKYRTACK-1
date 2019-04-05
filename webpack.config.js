@@ -87,7 +87,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         filename: 'index.html',
         template: 'src/index.pug',
-        inject: true
+        inject: false
     })
   ],
 }
