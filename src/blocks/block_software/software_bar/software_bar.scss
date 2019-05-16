@@ -27,13 +27,8 @@
         margin-right: 0;
       }
       @media screen and (max-width: $phoneWidth) {
-        min-width: 80% !important;
-        margin-right: 0!important;
+        min-width: 80% ;
       }
-    }
-    /* necessary to style the progress bar background */
-    ::-webkit-progress-bar {
-      background-color: $zero-color ; 
     }
     .progress-bar::-webkit-progress-value {
       background-color: $borders;
@@ -44,6 +39,10 @@
     .progress-bar::-ms-fill {
       background-color: $borders;
       border:0;
+    }
+    /* necessary to style the progress bar background */
+    ::-webkit-progress-bar {
+      background-color: $zero-color ; 
     }
   }
 }

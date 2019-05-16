@@ -18,13 +18,13 @@
         @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
       }
       @media screen and (max-width: $smDesktopWidth) {
-        min-width: 175px !important;
+        min-width: 175px;
         $min_font_size: 14px;
         $max_font_size: 32px;
         @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
       }
       @media screen and (max-width: 527px) {
-        min-width: 115px !important;
+        min-width: 115px;
       }                         
     }
         .contact-line-warpper__container2
