@@ -1,56 +1,50 @@
 @import "scss_assets/mixins_functions.scss";
 .avatar {
-    width:100%;
-    .avatar_wrapper {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 80px;
-        .avatar__avatar-border 
-        {   
-            margin: auto;
-            width: 250px;
-            height: 250px;   
-            border: 2px solid $borders;
+  width:100%;
+  .avatar_wrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+  .avatar__avatar-border {   
+    margin: auto;
+    width: 250px;
+    height: 250px;   
+    border: 2px solid $borders;
+    border-radius: 50%;
+        .avatar__avatar-photo {   
+            height: 224px;
+            width: 224px;
             border-radius: 50%;
-            .avatar__avatar-photo
-            {   
-                height: 224px;
-                width: 224px;
-                border-radius: 50%;
-                background: $borders;
-                margin: 13px;
+            background: $borders;
+            margin: 13px;
             }   
         }
     }
-
 }
 
 .h1 {
-    line-height: 80%;
-    letter-spacing: -1px;
-    font-size: 67px;
-
-    $min_font_size: 17px;
-    $max_font_size: 67px;
-    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
-
-
+  line-height: 80%;
+  letter-spacing: -1px;
+  font-size: 67px;
+  $min_font_size: 17px;
+  $max_font_size: 67px;
+  @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
 }
 .h2 {
-    font-family: $lightFont;
-    font-size: 58px;
-    $min_font_size: 17px;
-    $max_font_size: 58px;
-    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+  font-family: $lightFont;
+  font-size: 58px;
+  $min_font_size: 17px;
+  $max_font_size: 58px;
+  @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
 }
 .h4 {
-    line-height: 200%;
-    letter-spacing: -1px;
-    font-size: 39px;
-    $min_font_size: 17px;
-    $max_font_size: 39px;
-    @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+  line-height: 200%;
+  letter-spacing: -1px;
+  font-size: 39px;
+  $min_font_size: 17px;
+  $max_font_size: 39px;
+  @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
 }

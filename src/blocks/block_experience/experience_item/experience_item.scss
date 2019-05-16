@@ -1,89 +1,70 @@
 @import "scss_assets/mixins_functions.scss";
-.experience_item
-    {
-        width: 100%;
-        .experience_item_wrapper
-        {   
-            margin-top: 50px;
-            margin-bottom: -25px;
-            display: flex;
-            flex-direction:row;
-            .experience_item_wrapper__dot
-            {
-                margin-right: 5%;
-                margin-top: 0.5%;
-                align-self: flex-start;
-                .dot
-                    {
-                    background: $mainFontColor;
-                    height: 27px;
-                    width: 27px;
-                    border-radius: 50%;
-                    @media screen and (max-width: $desktopWidth) 
-                    {
-                        height: 24px;
-                        width: 24px;
-                    }
-                    @media screen and (max-width: $tableWidth) 
-                    {
-                        height: 20px!important;
-                        width: 20px!important;
-                    }
-                    
-                    }
-            }
-            .experience_item_wrapper__content
-            {    
-                display: flex;
-                flex-direction: column;
-                margin-bottom: -30px;
-                .experience_item_wrapper__content__1line
-                    {
-                        line-height: 0.9;
-                        
-                         
-                        //  margin-top: -50px;
-                        //  margin-bottom: -40px;
-                        
-
-                        .company_name 
-                        {   
-                            margin-block-start: 0px;
-                            margin-block-end: 0px;
-                            font-size: 34px;
-                            color: $mainFontColor;
-                            font-family: $boldFont;
-                            $min_font_size: 24px;
-                            $max_font_size: 34px;
-                            @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);  
-                            .date
-                            {
-                                margin-left: 5%;
-                                color:$mainFontColor;
-                                font-size: 34px;
-                                font-family: $mainFont; 
-                            }
-                        }
-                    }
-                .job
-                    {
-                        margin-block-start: 0.5%;
-                        margin-block-end: 4%;
-                        font-size: 34px;
-                        color:$mainFontColor;
-                        font-family: $lightFont;
-                        $min_font_size: 24px;
-                        $max_font_size: 34px;
-                        @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
-                    }
-                .experience_item_wrapper__content__3line
-                    {
-                        margin-top: -6%;
-                        text-align:justify;
-                        $min_font_size: 17px;
-                        $max_font_size: 24px;
-                        @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
-                    }
-            }
+.experience_item {
+  width: 100%;
+  .experience_item_wrapper {   
+    margin-top: 50px;
+    margin-bottom: -25px;
+    display: flex;
+    flex-direction:row;
+    .experience_item_wrapper__dot {
+      margin-right: 5%;
+      margin-top: 0.5%;
+      align-self: flex-start;
+      .dot {
+        background: $mainFontColor;
+        height: 27px;
+        width: 27px;
+        border-radius: 50%;
+        @media screen and (max-width: $desktopWidth) {
+          height: 24px;
+          width: 24px;
         }
+        @media screen and (max-width: $tableWidth) {
+          height: 20px!important;
+          width: 20px!important;
+        }            
+      }
     }
+    .experience_item_wrapper__content {    
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -30px;
+      .experience_item_wrapper__content__1line {
+        line-height: 0.9;
+        .company_name {   
+          margin-block-start: 0px;
+          margin-block-end: 0px;
+          font-size: 34px;
+          color: $mainFontColor;
+          font-family: $boldFont;
+          $min_font_size: 24px;
+          $max_font_size: 34px;
+          @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);  
+          .date {
+            margin-left: 5%;
+            color:$mainFontColor;
+            font-size: 34px;
+            font-family: $mainFont; 
+          }
+        }
+      }
+      .job {
+        margin-block-start: 0.5%;
+        margin-block-end: 4%;
+        font-size: 34px;
+        color:$mainFontColor;
+        font-family: $lightFont;
+        $min_font_size: 24px;
+        $max_font_size: 34px;
+        @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
+      }
+      .experience_item_wrapper__content__3line {
+        margin-top: -6%;
+        text-align:justify;
+        $min_font_size: 17px;
+        $max_font_size: 24px;
+        @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+      }
+    }
+  }
+}

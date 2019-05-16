@@ -1,17 +1,14 @@
 @import "scss_assets/mixins_functions.scss";
 @import "experience_item/experience_item.scss";
 
-.experience
-    {
-        width: 100%;
-        .experience_wrapper
-            {
-                width: 100%;
-                margin-bottom: 35%;
-            }
-            .experience_wrapper__item
-                {
-                    width: 100%;
-                    margin-bottom: -30%;
-                }
-    }
+.experience {
+  width: 100%;
+  .experience_wrapper {
+    width: 100%;
+    margin-bottom: 35%;
+  }
+  .experience_wrapper__item {
+    width: 100%;
+    margin-bottom: -30%;
+  }
+}
