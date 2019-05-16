@@ -1,13 +1,13 @@
 @import "scss_assets/mixins_functions.scss";
-.contact_line {
-  .contact_line_wrapper {
+.contact-line {
+    .contact-line-wrapper {
     width: 100%;
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: flex-start;
     align-items: center;
-    .contact_line_wrapper__container1 {
+    .contact-line-wrapper__container1 {
       min-width: 175px; 
       color: $borders;
       font-family: $boldFont;
@@ -27,7 +27,7 @@
         min-width: 115px !important;
       }                         
     }
-        .contact_line_warpper__container2
+        .contact-line-warpper__container2
         {
           font-family: $mainFont;
           color: #000000;

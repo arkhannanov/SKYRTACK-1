@@ -1,13 +1,13 @@
 mixin dots(headline, number_of_dots)
-    .skills_dots
-        .skills_dots_wrapper
-            div.skills_dots_wrapper__headline
+    .skills-dots
+        .skills-dots-wrapper
+            div.skills-dots-wrapper__headline
                 p= headline
-            div.skills_dots_wrapper__dots-container
+            div.skills-dots-wrapper__dots-container
                 - var i = 0;
                 while i<12
                     if i<number_of_dots
-                        div.filled_dot
+                        .filled-dot
                     else
-                        div.empty_dot
+                        .empty-dot
                     - i++;

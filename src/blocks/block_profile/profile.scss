@@ -3,7 +3,7 @@
 
 .profile {
   width: 100%;
-  .profile__wrapper {
+  .profile-wrapper {
     width: 100%;
     text-align:justify;
     .profile__picture {
@@ -15,8 +15,8 @@
       $max_font_size: 24px;
       @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
     }
-    .profile__text_bold {
-      font-family: $boldFont;
-    }
+    // .profile__text_bold {
+    //   font-family: $boldFont;
+    // }
   }
 }

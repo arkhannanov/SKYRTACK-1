@@ -1,11 +1,11 @@
 @import "scss_assets/mixins_functions.scss";
-.skills_dots {
+.skills-dots {
   width: 100%;
-  .skills_dots_wrapper {
+  .skills-dots-wrapper {
     max-width: 70%;
     margin: auto;
     margin-bottom: -10px;
-    .skills_dots_wrapper__headline {
+    .skills-dots-wrapper__headline {
       color: $mainFontColor;
       text-align: center;
       margin-bottom: -30px;
@@ -14,11 +14,11 @@
       $max_font_size: 38px;
       @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
     }
-    .skills_dots_wrapper__dots-container {
+    .skills-dots-wrapper__dots-container {
       display: flex;
       flex-direction:row;
       justify-content: space-between;
-      .filled_dot {
+      .filled-dot {
         background: $borders;
         height: 19px;
         width: 19px;
@@ -36,7 +36,7 @@
           width: 11px;
         }
       }
-      .empty_dot {
+      .empty-dot {
         background: $zero-color;
         height: 19px;
         width: 19px;

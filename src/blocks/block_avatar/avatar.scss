@@ -1,7 +1,7 @@
 @import "scss_assets/mixins_functions.scss";
 .avatar {
   width:100%;
-  .avatar_wrapper {
+  .avatar-wrapper {
   width: 100%;
   text-align: center;
   display: flex;
@@ -24,7 +24,6 @@
         }
     }
 }
-
 .h1 {
   line-height: 80%;
   letter-spacing: -1px;

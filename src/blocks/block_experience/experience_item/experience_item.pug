@@ -1,13 +1,13 @@
 mixin experience_item(company_name, date, job,content)
-    .experience_item
-        .experience_item_wrapper
-            div.experience_item_wrapper__dot
-                div.dot
-            div.experience_item_wrapper__content
-                div.experience_item_wrapper__content__1line
-                    p.company_name=company_name
+    .experience-item
+        .experience-item-wrapper
+            .experience-item-wrapper__dot
+                .dot
+            .experience-item-wrapper__content
+                .experience-item-wrapper__content-1line
+                    p.company-name=company_name
                         span.date=date
-                div.experience_item_wrapper__content__2line
+                div.experience-item-wrapper__content-2line
                     p.job=job
-                div.experience_item_wrapper__content__3line
+                div.experience-item-wrapper__content-3line
                     p.container=content

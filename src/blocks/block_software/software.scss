@@ -3,9 +3,9 @@
 
 .software {
   width: 100%;
-  .software_wrapper {
+  .software-wrapper {
     width: 100%;
-    .software_wrapper__item {
+    .software-wrapper__item {
       margin-top: 4%;
       width: 100%;
       margin-bottom: -30%;
@@ -16,10 +16,10 @@
         flex-direction:column;
         align-items: center;
       }
-      .software_column1 {
+      .software-column1 {
         width: 50%;
       }
-      .software_column2 {
+      .software-column2 {
       width: 50%;
       }                  
     }

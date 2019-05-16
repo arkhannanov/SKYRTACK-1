@@ -3,75 +3,61 @@
 @import "scss_assets/mixins_functions.scss";
 
 html {
-    line-height: $mainLineHeight;
-    font-size: $mainFontSize;
-    color: $mainFontColor;
-    max-width: 1920px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    }
-
-body {
-    font-family: $mainFont;
-	font-size: $mainFontSize;
-    font-weight: $mainFontWeight;
-    margin: 0;
-    padding: 0;
-    }
-
-h1, h2, h3, h4, h5, h6 { 
-    margin: 0; 
-    font-family: $boldFont;
-    }
-
-a {
-    text-decoration: none;
-    }
-
-main {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    }
-
-.wrapper
-{
-    margin-left: 93px;
-    margin-top: 136px;
-    margin-right: 89px;
-   // border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: $smDesktopWidth) {
-        flex-wrap: wrap;
-      }
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.left-col {
-    background-color: #FFF;
-    width: 38%;
-    //border: 2px solid black;
-    margin-right: 7,29%;
-    @media screen and (max-width: $smDesktopWidth ) {
-        width: 100%;
-        margin-right: 0px;
-
-    }
-
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0; 
+  font-family: $boldFont;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  margin-left: 93px;
+  margin-top: 136px;
+  margin-right: 89px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $smDesktopWidth) {
+    flex-wrap: wrap;
   }
-
+}
+.left-col {
+  background-color: #FFF;
+  width: 38%;
+  margin-right: 7,29%;
+  @media screen and (max-width: $smDesktopWidth ) {
+  width: 100%;
+  margin-right: 0px;
+  }
+}
 .right-col {
-    background-color: #fff;
-    width: 56.5%;
-  //  border: 2px solid red;
-    @media screen and (max-width: $smDesktopWidth ) {
-        width: 100%;
-    }
-  } 
-
+  background-color: #fff;
+  width: 56.5%;
+  @media screen and (max-width: $smDesktopWidth ) {
+    width: 100%;
+  }
+} 
 @import "../blocks/block_avatar/avatar.scss";
 @import "../blocks/block_profile/profile.scss";
 @import "../blocks/block_contact/contact.scss";

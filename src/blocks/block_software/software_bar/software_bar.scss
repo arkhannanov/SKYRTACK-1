@@ -1,8 +1,8 @@
 @import "scss_assets/mixins_functions.scss";
-.software_bar {
+.software-bar {
   width: 100%;
   margin-bottom: 12px;
-  .software_bar__headline {
+  .software-bar__headline {
     width: 100%;
     font-family: $mainFont;
     $min_font_size: 20px;
@@ -13,7 +13,7 @@
       margin-block-end: 8px;
     }
   }
-  .software_bar__progress {
+  .software-bar__progress {
     width: 100%;
     progress { 
       min-width: 80%;
@@ -35,13 +35,13 @@
     ::-webkit-progress-bar {
       background-color: $zero-color ; 
     }
-    .progress_bar::-webkit-progress-value {
+    .progress-bar::-webkit-progress-value {
       background-color: $borders;
     }
-    .progress_bar::-moz-progress-bar {
+    .progress-bar::-moz-progress-bar {
       background-color: $borders;
     }
-    .progress_bar::-ms-fill {
+    .progress-bar::-ms-fill {
       background-color: $borders;
       border:0;
     }

@@ -1,12 +1,12 @@
 @import "scss_assets/mixins_functions.scss";
-.education_item {
+.education-item {
   width: 100%;
-  .education_item_wrapper {   
+  .education-item-wrapper {   
     margin-top: 50px;
     margin-bottom: -35px;
     display: flex;
     flex-direction:row;
-    .education_item_wrapper__dot {
+    .education-item-wrapper__dot {
       margin-right: 5%;
       margin-top: 0.5%;
       align-self: flex-start;
@@ -25,11 +25,11 @@
         }          
       }
     }
-    .education_item_wrapper__content {    
+    .education-item-wrapper__content {    
       display: flex;
       flex-direction: column;
       margin-bottom: -5px;
-      .education_item_wrapper__content__1line {
+      .education-item-wrapper__content-1line {
         line-height: 0.9;
         .degree {   
           margin-block-start: 0px;
@@ -48,7 +48,7 @@
           }
         }
       }
-      .university_name {
+      .university-name {
         margin-block-start: 0.5%;
         margin-block-end: 4%;
         font-size: 34px;
@@ -58,7 +58,7 @@
         $max_font_size: 34px;
         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
       }
-      .education_item_wrapper__content__3line {
+      .education-item-wrapper__content-3line {
         margin-top: -6%;
         text-align:justify;
         $min_font_size: 17px;

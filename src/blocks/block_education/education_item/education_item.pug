@@ -1,13 +1,13 @@
 mixin education_item(degree, date, university_name,content)
-    .education_item
-        .education_item_wrapper
-            div.education_item_wrapper__dot
-                div.dot
-            div.education_item_wrapper__content
-                div.education_item_wrapper__content__1line
+    .education-item
+        .education-item-wrapper
+            .education-item-wrapper__dot
+                .dot
+            .education-item-wrapper__content
+                .education-item-wrapper__content-1line
                     p.degree=degree
                         span.date=date
-                div.education_item_wrapper__content__2line
-                    p.university_name=university_name
-                div.education_item_wrapper__content__3line
+                .education-item-wrapper__content-2line
+                    p.university-name=university_name
+                .education-item-wrapper__content-3line
                     p.container=content

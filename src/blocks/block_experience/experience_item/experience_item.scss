@@ -1,12 +1,12 @@
 @import "scss_assets/mixins_functions.scss";
-.experience_item {
+.experience-item {
   width: 100%;
-  .experience_item_wrapper {   
+  .experience-item-wrapper {   
     margin-top: 50px;
     margin-bottom: -25px;
     display: flex;
     flex-direction:row;
-    .experience_item_wrapper__dot {
+    .experience-item-wrapper__dot {
       margin-right: 5%;
       margin-top: 0.5%;
       align-self: flex-start;
@@ -25,13 +25,13 @@
         }            
       }
     }
-    .experience_item_wrapper__content {    
+    .experience-item-wrapper__content {    
       display: flex;
       flex-direction: column;
       margin-bottom: -30px;
-      .experience_item_wrapper__content__1line {
+      .experience-item-wrapper__content-1line {
         line-height: 0.9;
-        .company_name {   
+        .company-name {   
           margin-block-start: 0px;
           margin-block-end: 0px;
           font-size: 34px;
@@ -58,7 +58,7 @@
         $max_font_size: 34px;
         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
       }
-      .experience_item_wrapper__content__3line {
+      .experience-item-wrapper__content-3line {
         margin-top: -6%;
         text-align:justify;
         $min_font_size: 17px;
