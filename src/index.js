@@ -1,4 +1,5 @@
 import './js/common.js'
+import './js/favicons.js'
 //import './css/main.css'
 import './scss/main.scss'
 
