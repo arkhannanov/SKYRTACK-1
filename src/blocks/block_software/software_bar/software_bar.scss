@@ -2,20 +2,21 @@
 .software-bar {
   width: 100%;
   margin-bottom: 12px;
+
   .software-bar__headline {
     width: 100%;
     font-family: $mainFont;
     $min_font_size: 20px;
     $max_font_size: 38px;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
-    .headline {
-      margin-block-start: 0.5%;
-      margin-block-end: 8px;
-    }
+    margin-block-start: 0.5%;
+    margin-block-end: 8px;
   }
+
   .software-bar__progress {
     width: 100%;
-    progress { 
+
+    .software-bar__progress-bar { 
       min-width: 80%;
       border: 0; /* for IE */
       height: 30px;
@@ -30,16 +31,20 @@
         min-width: 80% ;
       }
     }
-    .progress-bar::-webkit-progress-value {
+
+    .software-bar__progress-bar::-webkit-progress-value {
       background-color: $borders;
     }
-    .progress-bar::-moz-progress-bar {
+
+    .software-bar__progress-bar::-moz-progress-bar {
       background-color: $borders;
     }
-    .progress-bar::-ms-fill {
+
+    .software-bar__progress-bar::-ms-fill {
       background-color: $borders;
       border:0;
     }
+    
     /* necessary to style the progress bar background */
     ::-webkit-progress-bar {
       background-color: $zero-color ; 

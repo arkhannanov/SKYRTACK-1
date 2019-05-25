@@ -1,9 +1,9 @@
-.skills
+mixin skills
     .skills-wrapper
-        div
+        .skills-wrapper__headline
             include ../block_profile/headline/headline.pug
             +headline("./img/skills-icon.png", "SKILLS")
-        div.skills-wrapper__items
+        .skills-wrapper__items
             include skills_dots/skills_dots.pug
             +dots("CREATIVE",9)
             +dots("TEAMWORK",11)

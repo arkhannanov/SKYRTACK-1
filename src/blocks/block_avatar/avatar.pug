@@ -1,7 +1,7 @@
-.avatar
-    .avatar-wrapper
-        div.avatar__avatar-border 
-            div.avatar__avatar-photo 
-        h2.h2 NAME HERE
-        h1.h1 SURNAME
-        h3.h3 GRAPHIC DESIGNER
+mixin avatar(name, surname, title)
+    .avatar
+        .avatar__border 
+            .avatar__photo 
+        h2.avatar__name= name
+        h1.avatar__surname= surname
+        h3.avatar__title= title

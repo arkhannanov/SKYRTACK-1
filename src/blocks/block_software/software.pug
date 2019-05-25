@@ -1,15 +1,15 @@
-.software
+mixin software
     .software-wrapper
-        div
+        .software-wrapper__headline
             include ../block_profile/headline/headline.pug
             +headline("./img/software-icon.png", "SOFTWARE")
         .software-wrapper__item
             include software_bar/software_bar.pug
-            div.software-column1
-                +progress_bar("PHOTOSHOP",91)
-                +progress_bar("ILLUSTRATOR",70)
-                +progress_bar("INDESIGN",55)
-            div.software-column2
-                +progress_bar("DREAMWEAVER",84)
-                +progress_bar("AFTER EFFECTS",62)
-                +progress_bar("HTML&CSS3",91)
+            .software-wrapper__item-column1
+                +progress-bar("PHOTOSHOP",91)
+                +progress-bar("ILLUSTRATOR",70)
+                +progress-bar("INDESIGN",55)
+            .software-wrapper__item-column2
+                +progress-bar("DREAMWEAVER",84)
+                +progress-bar("AFTER EFFECTS",62)
+                +progress-bar("HTML&CSS3",91)

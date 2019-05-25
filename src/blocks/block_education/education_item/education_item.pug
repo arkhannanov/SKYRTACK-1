@@ -1,13 +1,12 @@
-mixin education_item(degree, date, university_name,content)
-    .education-item
-        .education-item-wrapper
-            .education-item-wrapper__dot
-                .dot
-            .education-item-wrapper__content
-                .education-item-wrapper__content-1line
-                    p.degree=degree
-                        span.date=date
-                .education-item-wrapper__content-2line
-                    p.university-name=university_name
-                .education-item-wrapper__content-3line
-                    p.container=content
+mixin education-item(degree, date, university_name,content)
+    .education-item-wrapper
+        .education-item-wrapper__dot
+            .dot
+        .education-item-wrapper__content
+            .education-item-wrapper__content-1line
+                p.education-item-wrapper__degree=degree
+                    span.education-item-wrapper__date=date
+            .education-item-wrapper__content-2line
+                p.education-item-wrapper__university-name=university_name
+            .education-item-wrapper__content-3line
+                p.education-item-wrapper__content=content

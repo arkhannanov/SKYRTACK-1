@@ -13,10 +13,17 @@ html
             .wrapper
                 section.left-col
                     include blocks/block_avatar/avatar.pug
+                    +avatar("NAME HERE", "SURNAME", "GRAPHIC DESIGNER")
                     include blocks/block_profile/profile.pug
+                    +profile
                     include blocks/block_contact/contact.pug
+                    +contact
                     include blocks/block_skills/skills.pug
+                    +skills
                 section.right-col
                     include blocks/block_education/education.pug
+                    +education
                     include blocks/block_experience/experience.pug
+                    +experience
                     include blocks/block_software/software.pug
+                    +software

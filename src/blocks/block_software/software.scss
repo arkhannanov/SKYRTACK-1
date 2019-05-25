@@ -1,27 +1,27 @@
 @import "scss_assets/mixins_functions.scss";
 @import "software_bar/software_bar.scss";
 
-.software {
+.software-wrapper {
   width: 100%;
-  .software-wrapper {
+  
+  .software-wrapper__item {
+    margin-top: 4%;
     width: 100%;
-    .software-wrapper__item {
-      margin-top: 4%;
-      width: 100%;
-      margin-bottom: -30%;
-      margin-right: 0;
-      display: flex;
-      flex-direction:row;
-      @media screen and (max-width: $tableWidth) {
-        flex-direction:column;
-        align-items: center;
-      }
-      .software-column1 {
-        width: 50%;
-      }
-      .software-column2 {
-      width: 50%;
-      }                  
+    margin-bottom: -30%;
+    margin-right: 0;
+    display: flex;
+    flex-direction:row;
+    @media screen and (max-width: $tableWidth) {
+      flex-direction:column;
+      align-items: center;
     }
+
+    .software-wrapper__item-column1 {
+      width: 50%;
+    }
+
+    .software-wrapper__item-column2 {
+      width: 50%;
+    }                  
   }
 }

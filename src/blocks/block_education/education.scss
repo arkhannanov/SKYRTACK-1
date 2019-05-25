@@ -1,12 +1,10 @@
 @import "scss_assets/mixins_functions.scss";
 @import "education_item/education_item.scss";
 
-.education {
+.education-wrapper {
   width: 100%;
-  .education-wrapper {
-    width: 100%;
-    margin-bottom: 35%;
-  }
+  margin-bottom: 35%;
+  
   .education-wrapper__item {
     width: 100%;
     margin-bottom: -30%;

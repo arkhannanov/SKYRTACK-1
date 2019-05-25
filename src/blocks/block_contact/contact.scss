@@ -2,14 +2,11 @@
 @import "scss_assets/mixins_functions.scss";
 @import "contact_line/contact_line.scss";
 
-.contact {
+.contact-wrapper {
   width: 100%;
-  .contact-wrapper {
-    width: 100%;
-    margin-bottom: 80px;
-    .contact-wrapper__item {
-      margin-top:20px;
-      margin-bottom: 20px;
-    }
+  margin-bottom: 80px;
+  .contact-wrapper__item {
+    margin-top:20px;
+    margin-bottom: 20px;
   }
 }
