@@ -1,10 +1,10 @@
 mixin education
     .education-wrapper
         .education-wrapper__headline
-            include ../block_profile/headline/headline.pug
+            include ../block_headline/headline.pug
             +headline("./img/education-icon.png", "EDUCATION")
         .education-wrapper__item
-            include education_item/education_item.pug
+            include ../block_education_item/education_item.pug
             +education-item("MASTER DEGREE","// Feb 2011 - Jun 2014","UNIVERSITY NAME","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
             +education-item("MASTER DEGREE","// Feb 2011 - Jun 2014","UNIVERSITY NAME","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
             +education-item("MASTER DEGREE","// Feb 2011 - Jun 2014","UNIVERSITY NAME","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")

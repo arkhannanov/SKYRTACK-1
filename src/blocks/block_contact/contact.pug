@@ -1,10 +1,10 @@
 mixin contact
     .contact-wrapper
         .contact-wrapper__header
-            include ../block_profile/headline/headline.pug
+            include ../block_headline/headline.pug
             +headline("./img/phone-icon.png", "CONTACT")
         .contact-wrapper__item
-            include contact_line/contact_line.pug
+            include ../block_contact_line/contact_line.pug
             +contact_line("ADDRESS","Main Street, City.")
         .contact-wrapper__item
             +contact_line("E-MAIL","contact@domain.com")
