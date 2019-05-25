@@ -1,0 +1,15 @@
+mixin contact
+    .contact
+        .contact__header
+            include ../headline/headline.pug
+            +headline("./img/phone-icon.png", "CONTACT")
+        .contact__item
+            include ../contact-line/contact-line.pug
+            +contact-line("ADDRESS","Main Street, City.")
+        .contact__item
+            +contact-line("E-MAIL","contact@domain.com")
+        .contact__item
+            +contact-line("PHONE","555-555-555")
+        .contact__item
+            +contact-line("WEBSITE","www.yourweb.com")
+        

@@ -58,16 +58,16 @@ main {
     width: 100%;
   }
 } 
-@import "../blocks/block_avatar/avatar.scss";
-@import "../blocks/block_profile/profile.scss";
-@import "../blocks/block_contact/contact.scss";
-@import "../blocks/block_skills/skills.scss";
-@import "../blocks/block_education/education.scss";
-@import "../blocks/block_experience/experience.scss";
-@import "../blocks/block_software/software.scss";
-@import "../blocks/block_contact_line/contact_line.scss";
-@import "../blocks/block_education_item/education_item.scss";
-@import "../blocks/block_experience_item/experience_item.scss";
-@import "../blocks/block_headline/headline.scss";
-@import "../blocks/block_skills_dots/skills_dots.scss";
-@import "../blocks/block_software_bar/software_bar.scss";
+@import "../blocks/avatar/avatar.scss";
+@import "../blocks/profile/profile.scss";
+@import "../blocks/contact/contact.scss";
+@import "../blocks/skills/skills.scss";
+@import "../blocks/education/education.scss";
+@import "../blocks/experience/experience.scss";
+@import "../blocks/software/software.scss";
+@import "../blocks/contact-line/contact-line.scss";
+@import "../blocks/education-item/education-item.scss";
+@import "../blocks/experience-item/experience-item.scss";
+@import "../blocks/headline/headline.scss";
+@import "../blocks/skills-dots/skills-dots.scss";
+@import "../blocks/software-bar/software-bar.scss";

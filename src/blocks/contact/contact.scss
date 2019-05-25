@@ -1,0 +1,10 @@
+@import "scss_assets/mixins_functions.scss";
+
+.contact {
+  width: 100%;
+  margin-bottom: 80px;
+  .contact__item {
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+}

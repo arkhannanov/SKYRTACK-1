@@ -1,0 +1,11 @@
+@import "scss_assets/mixins_functions.scss";
+
+.education {
+  width: 100%;
+  margin-bottom: 35%;
+  
+  .education__item {
+    width: 100%;
+    margin-bottom: -30%;
+  }
+}

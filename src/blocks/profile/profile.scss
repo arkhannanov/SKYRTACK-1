@@ -1,0 +1,17 @@
+@import "scss_assets/mixins_functions.scss";
+
+.profile {
+  width: 100%;
+  text-align:justify;
+
+  .profile__picture {
+    width:100%;
+  }
+
+  .profile__text {
+    margin-bottom: 70px;
+    $min_font_size: 17px;
+    $max_font_size: 24px;
+    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+  }
+}

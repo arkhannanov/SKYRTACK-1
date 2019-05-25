@@ -1,0 +1,26 @@
+@import "scss_assets/mixins_functions.scss";
+
+.software {
+  width: 100%;
+  
+  .software__items {
+    margin-top: 4%;
+    width: 100%;
+    margin-bottom: -30%;
+    margin-right: 0;
+    display: flex;
+    flex-direction:row;
+    @media screen and (max-width: $tableWidth) {
+      flex-direction:column;
+      align-items: center;
+    }
+
+    .software__items-column1 {
+      width: 50%;
+    }
+
+    .software__items-column2 {
+      width: 50%;
+    }                  
+  }
+}

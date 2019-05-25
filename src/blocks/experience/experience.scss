@@ -1,0 +1,11 @@
+@import "scss_assets/mixins_functions.scss";
+
+.experience {
+  width: 100%;
+  margin-bottom: 35%;
+  
+  .experience__item {
+    width: 100%;
+    margin-bottom: -30%;
+  }
+}

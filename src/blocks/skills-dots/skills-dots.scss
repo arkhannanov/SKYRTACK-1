@@ -1,0 +1,61 @@
+@import "scss_assets/mixins_functions.scss";
+
+.skills-dots {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: -10px;
+
+  .skills-dots__headline {
+    color: $mainFontColor;
+    text-align: center;
+    margin-bottom: 7px;
+    font-family: $mainFont; 
+    $min_font_size: 20px;
+    $max_font_size: 38px;
+    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+  }
+
+  .skills-dots__dots-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+    .skills-dots__filled-dot {
+      background: $borders;
+      height: 19px;
+      width: 19px;
+      border-radius: 50%; 
+      @media screen and (max-width: $smDesktopWidth) {
+        height: 17px;
+        width: 17px;
+      }            
+      @media screen and (max-width: $tableWidth) {
+        height: 15px;
+        width: 15px;
+      }
+      @media screen and (max-width: $tableWidth) {
+        height: 11px;
+        width: 11px;
+      }
+    }
+
+    .skills-dots__empty-dot {
+      background: $zero-color;
+      height: 19px;
+      width: 19px;
+      border-radius: 50%;
+      @media screen and (max-width: $smDesktopWidth) {
+        height: 17px;
+        width: 17px;
+      }            
+      @media screen and (max-width: $tableWidth) {
+        height: 15px;
+        width: 15px;
+      }
+      @media screen and (max-width: $tableWidth) {
+        height: 11px;
+        width: 11px;
+      }
+    }
+  }
+}

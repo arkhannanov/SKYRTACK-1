@@ -1,0 +1,26 @@
+  .headline {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    @media screen and (max-width: 510px) {
+      flex-direction: column;
+    }
+
+    .headline__text {
+      color: $borders;
+      margin-left: 18px;
+      $min_font_size: 22px;
+      $max_font_size: 36px;
+      @include fluid-type(100px, $tableWidth, $min_font_size, $max_font_size);
+    }
+    
+    .headline__line {
+      height: 9px;
+      width: 100%;
+      background-color:$borders;
+      margin-left: 13px;
+      @media screen and (max-width: 510px) {
+        display: none;
+      }
+    } 
+  }
