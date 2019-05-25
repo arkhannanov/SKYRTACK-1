@@ -37,7 +37,6 @@
       .education-item-wrapper__degree {   
         margin-block-start: 0px;
         margin-block-end: 0px;
-        font-size: 34px;
         color: $borders;
         font-family: $boldFont;
         $min_font_size: 24px;
@@ -47,7 +46,7 @@
         .education-item-wrapper__date {
           margin-left: 5%;
           color:$mainFontColor;
-          font-size: 34px;
+          font-size: 1.416rem;
           font-family: $mainFont; 
         }
       }
@@ -56,7 +55,7 @@
     .education-item-wrapper__university-name {
       margin-block-start: 0.5%;
       margin-block-end: 4%;
-      font-size: 34px;
+      font-size: 1.416rem;
       color:$mainFontColor;
       font-family: $lightFont;
       $min_font_size: 24px;
