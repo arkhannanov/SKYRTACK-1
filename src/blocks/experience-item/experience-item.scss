@@ -51,6 +51,7 @@
           }
         }
       }
+
       .experience-item__job {
         margin-block-start: 0.5%;
         margin-block-end: 4%;
@@ -60,6 +61,7 @@
         $max_font_size: 34px;
         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
       }
+      
       .experience-item__content-3line {
         margin-top: -6%;
         text-align:justify;
