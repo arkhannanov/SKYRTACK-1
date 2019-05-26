@@ -3,12 +3,12 @@
 .skills-dots {
   max-width: 70%;
   margin: auto;
-  margin-bottom: -10px;
+  margin-bottom: -0.417rem;
 
   .skills-dots__headline {
     color: $mainFontColor;
     text-align: center;
-    margin-bottom: 7px;
+    margin-bottom: 0.292rem;
     font-family: $mainFont; 
     $min_font_size: 20px;
     $max_font_size: 38px;
@@ -22,39 +22,31 @@
     
     .skills-dots__filled-dot {
       background: $borders;
-      height: 19px;
-      width: 19px;
+      height: 0.792rem;
+      width: 0.792rem;
       border-radius: 50%; 
       @media screen and (max-width: $smDesktopWidth) {
-        height: 17px;
-        width: 17px;
+        height: 0.708rem;
+        width: 0.708rem;
       }            
       @media screen and (max-width: $tableWidth) {
-        height: 15px;
-        width: 15px;
-      }
-      @media screen and (max-width: $tableWidth) {
-        height: 11px;
-        width: 11px;
+        height: 0.625rem;
+        width: 0.625rem;
       }
     }
 
     .skills-dots__empty-dot {
       background: $zero-color;
-      height: 19px;
-      width: 19px;
+      height: 0.792rem;
+      width: 0.792rem;
       border-radius: 50%;
       @media screen and (max-width: $smDesktopWidth) {
-        height: 17px;
-        width: 17px;
+        height: 0.708rem;
+        width: 0.708rem;
       }            
       @media screen and (max-width: $tableWidth) {
-        height: 15px;
-        width: 15px;
-      }
-      @media screen and (max-width: $tableWidth) {
-        height: 11px;
-        width: 11px;
+        height: 0.625rem;
+        width: 0.625rem;
       }
     }
   }

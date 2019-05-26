@@ -12,17 +12,27 @@
 
   .avatar__border {   
     margin: auto;
-    width: 250px;
-    height: 250px;   
+    width: 10.417rem;
+    height: 10.417rem;   
     border: 2px solid $borders;
     border-radius: 50%;
 
+    @media screen and (max-width: $tableWidth) {
+      width: 7.5rem;
+      height: 7.5rem;  
+    }
         .avatar__photo {   
-          height: 224px;
-          width: 224px;
+          height: 9.333rem;
+          width: 9.333rem;
           border-radius: 50%;
           background: $borders;
-          margin: 13px;
+          margin: 0.542rem;
+
+          @media screen and (max-width: $tableWidth) {
+            width: 6.717rem;
+            height: 6.717rem; 
+            margin: 0.390rem;
+          }
         }   
   }
 
@@ -30,7 +40,7 @@
     line-height: 80%;
     letter-spacing: -1px;
     font-family: $lightFont;
-    top: 10px;
+    top: 0.417rem;
     $min_font_size: 17px;
     $max_font_size: 57px;
     margin-block-start: 0;
@@ -54,7 +64,7 @@
     letter-spacing: -1px;
     $min_font_size: 17px;
     $max_font_size: 30px;
-    top: -20px;
+    top: -0.833rem;
     margin-block-start: 0;
     margin-block-end: 0;
     position: relative;

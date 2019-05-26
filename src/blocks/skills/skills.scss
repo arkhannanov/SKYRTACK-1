@@ -2,16 +2,16 @@
 
   .skills {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 3.333rem;
     
     .skills__items {
-      margin-top:44px;
-      margin-left: 69px;
+      margin-top: 1.833rem;
+      margin-left: 2.875rem;
       @media screen and (max-width: 1300px) {
-        margin-left: 25px;
+        margin-left: 1.042rem;
       }
       @media screen and (max-width: $smDesktopWidth) {
-        margin-left: 65px;
+        margin-left: 2.708rem;
       }
       @media screen and (max-width: 527px) {
         margin-left: auto;

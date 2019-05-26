@@ -8,18 +8,18 @@
   align-items: center;
 
   .contact-line__container1 {
-    width: 175px; 
+    width: 7.292rem; 
     color: $borders;
     font-family: $boldFont;
     @media screen and (max-width: 1300px) {
-      width: 115px;
+      width: 4.792rem;
       $min_font_size: 20px;
       $max_font_size: 24px;
       @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
     }
 
     @media screen and (max-width: $smDesktopWidth) {
-      width: 175px!important;
+      width: 7.292rem!important;
       $min_font_size: 14px;
       $max_font_size: 24px;
       @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
@@ -31,7 +31,7 @@
     color: #000000;
     white-space: nowrap;
     @media screen and (max-width: 1300px) {
-    min-width: 115px;
+    min-width: 4.792rem;
     $min_font_size: 20px;
     $max_font_size: 24px;
     @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);

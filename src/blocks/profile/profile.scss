@@ -9,7 +9,7 @@
   }
 
   .profile__text {
-    margin-bottom: 70px;
+    margin-bottom: 2.917rem;
     $min_font_size: 17px;
     $max_font_size: 24px;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
