@@ -21,6 +21,13 @@
       width: 7.5rem;
       height: 7.5rem;  
     }
+
+    @media screen and (max-width: 375px) {
+      width: 5.0rem;
+      height: 5.0rem;  
+    }
+
+
         .avatar__photo {   
           height: 9.333rem;
           width: 9.333rem;
@@ -32,6 +39,13 @@
             width: 6.717rem;
             height: 6.717rem; 
             margin: 0.390rem;
+          }
+
+          @media screen and (max-width: 375px) {
+            width: 4.478rem;
+            height: 4.478rem;
+            margin: 0.260rem;
+            
           }
         }   
   }
