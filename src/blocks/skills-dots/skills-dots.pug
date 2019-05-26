@@ -1,10 +1,10 @@
-mixin dots(headline, number_of_dots)
+mixin dots( headline, number_of_dots)
     .skills-dots
         p.skills-dots__headline= headline
         .skills-dots__dots-container
             - var i = 0;
-            while i<12
-                if i<number_of_dots
+            while i < 12
+                if i < number_of_dots
                     .skills-dots__filled-dot
                 else
                     .skills-dots__empty-dot
