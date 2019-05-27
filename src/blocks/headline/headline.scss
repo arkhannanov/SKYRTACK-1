@@ -5,6 +5,7 @@
   @media screen and (max-width: 510px) {
     flex-direction: column;
   }
+
   .headline__image {
     @media screen and (max-width: $tableWidth ) {
       transform: scale(0.8);
@@ -13,6 +14,7 @@
       transform: scale(0.7);
     }
   }
+  
   .headline__text {
     color: $borders;
     margin-left: 0.75rem;
