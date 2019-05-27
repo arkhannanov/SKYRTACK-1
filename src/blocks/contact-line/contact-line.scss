@@ -12,6 +12,7 @@
     width: 7.292rem; 
     color: $borders;
     font-family: $boldFont;
+    text-transform: uppercase;
     @media screen and (max-width: 1300px) {
       width: 4.792rem;
       $min_font_size: 20px;
@@ -26,7 +27,7 @@
       @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
     }                         
   }
-  
+
   .contact-line__container2 {
     font-family: $mainFont;
     color: #000000;

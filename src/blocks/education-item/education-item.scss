@@ -42,13 +42,15 @@
         font-family: $boldFont;
         $min_font_size: 24px;
         $max_font_size: 34px;
+        text-transform: uppercase;
         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
 
         .education-item__date {
           margin-left: 5%;
           color:$mainFontColor;
           font-size: 1.416rem;
-          font-family: $mainFont; 
+          font-family: $mainFont;
+          text-transform: uppercase;
         }
       }
     }
@@ -61,6 +63,7 @@
       font-family: $lightFont;
       $min_font_size: 24px;
       $max_font_size: 34px;
+      text-transform: uppercase;
       @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
     }
 

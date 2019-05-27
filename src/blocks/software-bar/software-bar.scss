@@ -12,6 +12,7 @@
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
     margin-block-start: 0.5%;
     margin-block-end: 0.333rem;
+    text-transform: uppercase;
   }
 
   .software-bar__progress {

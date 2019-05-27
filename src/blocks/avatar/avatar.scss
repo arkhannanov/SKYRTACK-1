@@ -59,6 +59,7 @@
     margin-block-start: 0;
     margin-block-end: 0;
     position: relative;
+    text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
   }
 
@@ -69,6 +70,7 @@
     margin-block-start: 0;
     margin-block-end: 0;
     position: relative;
+    text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
   }
   
@@ -81,6 +83,7 @@
     margin-block-start: 0;
     margin-block-end: 0;
     position: relative;
+    text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
   }
 }
