@@ -43,7 +43,11 @@ module.exports = {
           options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
         }, {
           loader: 'sass-loader',
-          options: { sourceMap: true }
+          options: { 
+            sourceMap: true,
+            data: '@import "globals.scss";',
+            includePaths: [path.join(__dirname, 'src')] 
+          }
         }
       ]
     }, {

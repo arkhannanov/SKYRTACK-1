@@ -1,21 +1,19 @@
-@import "scss_assets/mixins_functions.scss";
-
-  .skills {
-    width: 100%;
-    margin-bottom: 3.333rem;
-    
-    .skills__items {
-      margin-top: 1.833rem;
-      margin-left: 2.875rem;
-      @media screen and (max-width: 1300px) {
-        margin-left: 1.042rem;
-      }
-      @media screen and (max-width: $smDesktopWidth) {
-        margin-left: 2.708rem;
-      }
-      @media screen and (max-width: 527px) {
-        margin-left: auto;
-      }
+.skills {
+  width: 100%;
+  margin-bottom: 3.333rem;
+  
+  .skills__items {
+    margin-top: 1.833rem;
+    margin-left: 2.875rem;
+    @media screen and (max-width: 1300px) {
+      margin-left: 1.042rem;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+      margin-left: 2.708rem;
+    }
+    @media screen and (max-width: 527px) {
+      margin-left: auto;
     }
   }
+}
    

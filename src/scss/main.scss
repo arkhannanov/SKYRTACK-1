@@ -1,6 +1,4 @@
 @import "scss_assets/fonts.scss";
-@import "scss_assets/vars.scss";
-@import "scss_assets/mixins_functions.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -71,16 +69,16 @@ main {
   }
 } 
 
-@import "../blocks/avatar/avatar.scss";
-@import "../blocks/profile/profile.scss";
-@import "../blocks/contact/contact.scss";
-@import "../blocks/skills/skills.scss";
-@import "../blocks/education/education.scss";
-@import "../blocks/experience/experience.scss";
-@import "../blocks/software/software.scss";
-@import "../blocks/contact-line/contact-line.scss";
-@import "../blocks/education-item/education-item.scss";
-@import "../blocks/experience-item/experience-item.scss";
-@import "../blocks/headline/headline.scss";
-@import "../blocks/skills-dots/skills-dots.scss";
-@import "../blocks/software-bar/software-bar.scss";
+// @import "../blocks/avatar/avatar.scss";
+// @import "../blocks/profile/profile.scss";
+// @import "../blocks/contact/contact.scss";
+// @import "../blocks/skills/skills.scss";
+// @import "../blocks/education/education.scss";
+// @import "../blocks/experience/experience.scss";
+// @import "../blocks/software/software.scss";
+// @import "../blocks/contact-line/contact-line.scss";
+// @import "../blocks/education-item/education-item.scss";
+// @import "../blocks/experience-item/experience-item.scss";
+// @import "../blocks/headline/headline.scss";
+// @import "../blocks/skills-dots/skills-dots.scss";
+// @import "../blocks/software-bar/software-bar.scss";
