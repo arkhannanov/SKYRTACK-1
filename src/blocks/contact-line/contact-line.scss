@@ -1,4 +1,5 @@
 @import "scss_assets/mixins_functions.scss";
+
 .contact-line {
   width: 100%;
   display: flex;
@@ -25,7 +26,7 @@
       @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
     }                         
   }
-
+  
   .contact-line__container2 {
     font-family: $mainFont;
     color: #000000;
