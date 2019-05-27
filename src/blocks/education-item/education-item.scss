@@ -4,12 +4,12 @@
   display: flex;
   flex-direction:row;
 
-  .education-item__dot {
+  .education-item__dot-container {
     margin-right: 5%;
     margin-top: 0.5%;
     align-self: flex-start;
 
-    .dot {
+    .education-item__dot {
       background: $mainFontColor;
       height: 1.125rem;
       width: 1.125rem;
@@ -30,7 +30,7 @@
     flex-direction: column;
     margin-bottom: -0.208rem;
 
-    .education-item__content-1line {
+    .education-item__content-degree {
       line-height: 0.9;
 
       .education-item__degree {   
@@ -65,7 +65,7 @@
       @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
     }
 
-    .education-item__content-3line {
+    .education-item__content-content {
       margin-top: -6%;
       text-align:justify;
       $min_font_size: 17px;
