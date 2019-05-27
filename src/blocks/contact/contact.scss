@@ -1,9 +1,63 @@
 .contact {
   width: 100%;
   margin-bottom: 3.333rem;
-  
+  margin-top: 0.833rem;
+  margin-bottom: 0.833rem;
   .contact__item {
-    margin-top: 0.833rem;
-    margin-bottom: 0.833rem;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+  
+    .contact__item__container1 {
+      width: 7.292rem; 
+      color: $borders;
+      font-family: $boldFont;
+      text-transform: uppercase;
+      @media screen and (max-width: 1300px) {
+        width: 4.792rem;
+        $min_font_size: 20px;
+        $max_font_size: 24px;
+        @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+      }
+  
+      @media screen and (max-width: $smDesktopWidth) {
+        width: 7.292rem!important;
+        $min_font_size: 14px;
+        $max_font_size: 24px;
+        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+      } 
+      @media screen and (max-width: 510px) {
+        width: 4.292rem!important;
+        $min_font_size: 14px;
+        $max_font_size: 24px;
+        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+      }
+    }
+    
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    .contact__item__container2 {
+      font-family: $mainFont;
+      color: #000000;
+      white-space: nowrap;
+      @media screen and (max-width: 1300px) {
+      min-width: 4.792rem;
+      $min_font_size: 20px;
+      $max_font_size: 24px;
+      @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+      }
+      @media screen and (max-width: $smDesktopWidth) {
+        $min_font_size: 14px;
+        $max_font_size: 24px;
+        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+      }
+    }
+    
   }
 }
