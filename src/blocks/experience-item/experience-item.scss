@@ -6,12 +6,12 @@
     display: flex;
     flex-direction:row;
 
-    .experience-item__dot {
+    .experience-item__dot-container {
       margin-right: 5%;
       margin-top: 0.5%;
       align-self: flex-start;
 
-      .dot {
+      .experience-item__dot {
         background: $mainFontColor;
         height: 1.125rem;
         width: 1.125rem;
