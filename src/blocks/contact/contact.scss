@@ -24,13 +24,13 @@
       }
   
       @media screen and (max-width: $smDesktopWidth) {
-        width: 7.292rem!important;
+        width: 7.292rem;
         $min_font_size: 14px;
         $max_font_size: 24px;
         @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
       } 
       @media screen and (max-width: 510px) {
-        width: 4.292rem!important;
+        width: 4.292rem;
         $min_font_size: 14px;
         $max_font_size: 24px;
         @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
