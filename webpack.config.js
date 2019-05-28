@@ -47,7 +47,7 @@ module.exports = {
         }, {
           loader: 'sass-loader',
           options: { 
-            sourceMap: true ,
+            sourceMap: true,
             data: '@import "globals.scss";',
             includePaths: [path.join(__dirname, './src')] 
           }
