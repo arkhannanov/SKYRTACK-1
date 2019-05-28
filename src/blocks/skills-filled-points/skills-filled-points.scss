@@ -19,7 +19,7 @@
     flex-direction:row;
     justify-content: space-between;
     
-    .skills-filled-points__filled-point {
+    .skills-filled-points_filled-point {
       background: $borders;
       height: 0.792rem;
       width: 0.792rem;
@@ -34,7 +34,7 @@
       }
     }
 
-    .skills-filled-points__empty-point {
+    .skills-filled-points_empty-point {
       background: $zero-color;
       height: 0.792rem;
       width: 0.792rem;
