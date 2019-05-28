@@ -1,11 +1,12 @@
-mixin skills
+mixin skills(options = {source: "./img/skills-icon.png", title: "skills", name1: "creative", nod1: "9", name2: "teamwork", nod2: "11", name3: "innovate", nod3: "6", name4: "communication", nod4: "11"})
+    -let {source= "./img/skills-icon.png", title= "profile", name1= "creative",  nod1= "9",  name2= "teamwork", nod2= "11", name3= "innovate", nod3= "6", name4= "communication", nod4= "11"} = options;
     .skills
         .skills__headline
             include ../headline/headline.pug
-            +headline("./img/skills-icon.png", "skills")
+            +headline( source, title)
         .skills__items
             include ../skills-dots/skills-dots.pug
-            +skills-dots("CREATIVE", 9)
-            +skills-dots("TEAMWORK", 11)
-            +skills-dots("INNOVATE", 6)
-            +skills-dots("COMMUNICATION", 11)
+            +skills-dots(name1, nod1)
+            +skills-dots(name2, nod2)
+            +skills-dots(name3, nod3)
+            +skills-dots(name4, nod4)

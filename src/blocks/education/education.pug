@@ -1,35 +1,12 @@
-mixin education
+mixin education(options = {source: "./img/education-icon.png", title: "education", degree: "master degree", date: "// Feb 2011 - Jun 2014", universityname: "university name", text: "Lorem"})
+    -let {source= "./img/education-icon.png", title= "education", degree= "master degree", date= "// Feb 2011 - Jun 2014", universityname= "university name", text= "text"} = options;
     .education
         .education__headline
             include ../headline/headline.pug
-            +headline("./img/education-icon.png", "education")
+            +headline( source, title)
         .education__item
             include ../education-item/education-item.pug
-            +education-item(`master degree`, 
-            `// Feb 2011 - Jun 2014`,
-            `university name`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
-            penatibus et magnis dis parturient montes, nascetur ridiculus 
-            mus. Donec quam felis, ultricies nec, pellentesque.`)
-            +education-item(`master degree`, 
-            `// Feb 2011 - Jun 2014`,
-            `university name`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
-            natoque penatibus et magnis dis parturient montes, nascetur 
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque.`)
-            +education-item(`master degree`, 
-            `// Feb 2011 - Jun 2014`,
-            `university name`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Donec quam felis, ultricies nec, pellentesque.`)
-            +education-item(`master degree`, 
-            `// Feb 2011 - Jun 2014`, 
-            `university name`,
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
-            et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-            felis, ultricies nec, pellentesque.`)
+            +education-item( degree, date, universityname, text)
+            +education-item( degree, date, universityname, text)
+            +education-item( degree, date, universityname, text)
+            +education-item( degree, date, universityname, text)

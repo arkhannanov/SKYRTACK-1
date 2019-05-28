@@ -1,15 +1,16 @@
-mixin software
+mixin software(options = {source: "./img/software-icon.png", title: "software", name1: "photoshop", nod1: "91", name2: "illustrator", nod2: "70", name3: "indesign", nod3: "55", name4: "dreamweaver", nod4: "84", name5: "after effects", nod5: "62", name6: "html&css3", nod6: "91"})
+    -let {source= "./img/software-icon.png", title= "software", name1= "photoshop",  nod1= "91",  name2= "illustrator", nod2= "70", name3= "indesign", nod3= "55", name4= "dreamweaver", nod4= "84", name5= "after effects", nod5= "62", name6= "html&css3", nod6= "91"} = options;
     .software
         .software__headline
             include ../headline/headline.pug
-            +headline("./img/software-icon.png", "software")
+            +headline(source, title)
         .software__items
             include ../software-bar/software-bar.pug
             .software__items-left-column
-                +progress-bar("photoshop", 91)
-                +progress-bar("illustrator", 70)
-                +progress-bar("indesign", 55)
+                +progress-bar(name1, nod1)
+                +progress-bar(name2, nod2)
+                +progress-bar(name3, nod3)
             .software__items-right-column
-                +progress-bar("dreamweaver", 84)
-                +progress-bar("after effects", 62)
-                +progress-bar("html&css3", 91)
+                +progress-bar(name4, nod4)
+                +progress-bar(name5, nod5)
+                +progress-bar(name6, nod6)

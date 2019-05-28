@@ -1,28 +1,15 @@
-mixin experience
+mixin experience(options = {source: "./img/experience-icon.png", title: "experience", companyname: "company name", date: "// Feb 2011 - Jun 2014", job: "Your job here", text: "Lorem"})
+    -let {source= "./img/experience-icon.png", title= "experience", companyname= "company name", date= "// Feb 2011 - Jun 2014", job= "Your job here", text= "text"} = options;
     .experience
         .experience__headline
             include ../headline/headline.pug
-            +headline("./img/experience-icon.png", "experience")
+            +headline( source, title )
         .experience__item
             include ../experience-item/experience-item.pug
-            +experience-item(`company name`, 
-            `// Feb 2011 - Jun 2014`,
-            `Your job here`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
-            et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque.`)
-            +experience-item(`company name`, 
-            `// Feb 2011 - Jun 2014`,
-            `Your job here`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
-            dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque.`)
-            +experience-item(`company name`, 
-            `// Feb 2011 - Jun 2014`,
-            `Your job here`, 
-            `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
-            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque.`)
+            +experience-item( companyname, date, job, text)
+            +experience-item( companyname, date, job, text)
+            +experience-item( companyname, date, job, text)
+            //- `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            //- Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
+            //- magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+            //- ultricies nec, pellentesque.`)

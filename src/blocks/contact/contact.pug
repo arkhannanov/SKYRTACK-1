@@ -1,17 +1,18 @@
-mixin contact
+mixin contact(options = {source: "./img/phone-icon.png", title: "contact", address: "Main Street, City.", email: "contact@domain.com.", phone: "555-555-555", website: "www.yourweb.com"})
+    -let {source="./img/phone-icon.png", title="contact", address ="Main Street, City.", email= "contact@domain.com.", phone= "555-555-555", website= "www.yourweb.com"} = options;
     .contact
         .contact__header
             include ../headline/headline.pug
-            +headline("./img/phone-icon.png", "contact")
+            +headline(source, title)
         .contact__item
             .contact__item__container1 address 
-            a.contact__item__container2 Main Street, City.
+            a.contact__item__container2= address
         .contact__item
             .contact__item__container1 e-mail 
-            a(href="mailto: contact@domain.com", class="contact__item__container2") contact@domain.com.
+            a(href="mailto: contact@domain.com", class="contact__item__container2")= email 
         .contact__item
             .contact__item__container1 phone
-            a(href="tel: 555-555-555", class="contact__item__container2") 555-555-555
+            a(href="tel: 555-555-555", class="contact__item__container2")= phone
         .contact__item
             .contact__item__container1 website
-            a(href="www.yourweb.com", class="contact__item__container2") www.yourweb.com
+            a(href="www.yourweb.com", class="contact__item__container2")= website
