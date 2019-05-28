@@ -1,5 +1,5 @@
 import './js/favicons.js'
-import './scss/main.scss'
+import './main.scss'
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);
