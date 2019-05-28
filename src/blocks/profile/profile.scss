@@ -1,6 +1,5 @@
 .profile {
   width: 100%;
-  text-align:justify;
 
   .profile__headline {
     width:100%;
@@ -8,8 +7,13 @@
 
   .profile__text {
     margin-bottom: 2.917rem;
+    margin-top: 0.3rem;
     $min_font_size: 17px;
     $max_font_size: 24px;
+    line-height: 1.23;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+    .profile__text_bold {
+      font-family: $boldFont;
+    }
   }
 }

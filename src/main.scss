@@ -1,5 +1,4 @@
 @import "./scss/scss_assets/fonts.scss";
-
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -18,4 +17,5 @@ body {
   font-weight: $mainFontWeight;
   margin: 0;
   padding: 0;
+  margin-top: -0.75rem;
 }

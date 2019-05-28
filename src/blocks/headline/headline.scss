@@ -17,9 +17,11 @@
   
   .headline__text {
     color: $borders;
-    margin-left: 0.75rem;
+    margin-left: 0.58rem;
     $min_font_size: 22px;
-    $max_font_size: 36px;
+    $max_font_size: 62px;
+    margin-bottom: 0.4rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     @include fluid-type(100px, $tableWidth, $min_font_size, $max_font_size);
   }
@@ -28,7 +30,8 @@
     height: 0.375rem;
     width: 100%;
     background-color:$borders;
-    margin-left: 0.542rem;
+    margin-left: 0.4rem;
+    margin-bottom: 0.5rem;
     @media screen and (max-width: 510px) {
       display: none;
     }

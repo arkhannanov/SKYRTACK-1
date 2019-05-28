@@ -46,7 +46,7 @@ module.exports = {
           options: { 
             sourceMap: true,
             data: '@import "globals.scss";',
-            includePaths: [path.join(__dirname, 'src')] 
+            includePaths: [path.join(__dirname, './src')] 
           }
         }
       ]
