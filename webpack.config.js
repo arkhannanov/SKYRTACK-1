@@ -42,11 +42,14 @@ module.exports = {
           loader: 'postcss-loader',
           options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
         }, {
+          loader: 'resolve-url-loader'
+          // options: {sourceMap: true }
+        }, {
           loader: 'sass-loader',
           options: { 
-            sourceMap: true,
-            data: '@import "globals.scss";',
-            includePaths: [path.join(__dirname, './src')] 
+            sourceMap: true
+            // data: '@import "globals.scss";',
+            // includePaths: [path.join(__dirname, './src')] 
           }
         }
       ]

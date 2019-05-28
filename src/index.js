@@ -5,13 +5,5 @@ function importAll(resolve) {
     resolve.keys().forEach(resolve);
   }
   
-importAll(
-    require.context('./blocks', true, /\.(scss)$/)
-  );
-
-  
-  // importAll(
-  //   require.context('./scss', true, /\.(scss)$/)
-  // );
-
+importAll(require.context('./', true, /\.(scss)$/));
 
