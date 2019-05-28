@@ -3,7 +3,7 @@
   margin: auto;
   margin-bottom: -0.417rem;
 
-  .skills-dots__headline {
+  .skills-filled-points__headline {
     color: $mainFontColor;
     text-align: center;
     margin-bottom: 0.292rem;
@@ -14,12 +14,12 @@
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
   }
 
-  .skills-dots__dots-container {
+  .skills-filled-points__points-container {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     
-    .skills-dots__filled-dot {
+    .skills-filled-points__filled-point {
       background: $borders;
       height: 0.792rem;
       width: 0.792rem;
@@ -34,7 +34,7 @@
       }
     }
 
-    .skills-dots__empty-dot {
+    .skills-filled-points__empty-point {
       background: $zero-color;
       height: 0.792rem;
       width: 0.792rem;

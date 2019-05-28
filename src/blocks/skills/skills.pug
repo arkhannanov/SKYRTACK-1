@@ -5,8 +5,8 @@ mixin skills(options = {source: "./img/skills-icon.png", title: "skills", name1:
             include ../headline/headline.pug
             +headline( source, title)
         .skills__items
-            include ../skills-dots/skills-dots.pug
-            +skills-dots(name1, nod1)
-            +skills-dots(name2, nod2)
-            +skills-dots(name3, nod3)
-            +skills-dots(name4, nod4)
+            include ../skills-filled-points/skills-filled-points.pug
+            +skills-filled-points(name1, nod1)
+            +skills-filled-points(name2, nod2)
+            +skills-filled-points(name3, nod3)
+            +skills-filled-points(name4, nod4)
