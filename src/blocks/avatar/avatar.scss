@@ -20,6 +20,11 @@
     border: 2px solid $borders;
     border-radius: 50%;
 
+    @media screen and (max-width: 1150px) {
+      width: 10.5rem;
+      height: 10.5rem;  
+    }
+
     @media screen and (max-width: $tableWidth) {
       width: 7.5rem;
       height: 7.5rem;  
@@ -38,6 +43,13 @@
           margin: 0.542rem;
           margin-top: 0.81rem;
           margin-left: 0.84rem;
+
+          @media screen and (max-width: 1150px) {
+            width: 9.404rem;
+            height: 9.404rem;
+           margin: 0.53rem;
+
+          }
 
           @media screen and (max-width: $tableWidth) {
             width: 6.717rem;
@@ -66,6 +78,12 @@
     position: relative;
     text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+    @media screen and (max-width: 1500px) {
+      $min_font_size: 40px;
+      $max_font_size: 80px;
+      @include fluid-type($smDesktopWidth, 1920px, $min_font_size, $max_font_size);
+    }
+    
   }
 
   .avatar__surname {
@@ -79,6 +97,11 @@
     position: relative;
     text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+    @media screen and (max-width: 1500px) {
+      $min_font_size: 58px;
+      $max_font_size: 96px;
+      @include fluid-type($smDesktopWidth, 1920px, $min_font_size, $max_font_size);
+    }
   }
   
   .avatar__title {
@@ -94,5 +117,10 @@
     position: relative;
     text-transform: uppercase;
     @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+    @media screen and (max-width: 1500px) {
+      $min_font_size: 24px;
+      $max_font_size: 38px;
+      @include fluid-type($smDesktopWidth, 1920px, $min_font_size, $max_font_size);
+    }
   }
 }

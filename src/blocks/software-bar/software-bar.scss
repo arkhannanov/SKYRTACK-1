@@ -6,23 +6,27 @@
     width: 100%;
     font-family: $mainFont;
     $min_font_size: 20px;
-    $max_font_size: 38px;
+    $max_font_size: 40px;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
     margin-block-start: 0.5%;
     margin-block-end: 0.333rem;
     text-transform: uppercase;
+    margin-top: -0.3rem;
+    margin-left: -0.12rem;
   }
 
   .software-bar__progress {
     width: 100%;
 
     .software-bar__progress-bar { 
-      min-width: 80%;
+      min-width: 103%;
       border: 0; /* for IE */
-      height: 1.25rem;
+      height: 1.35rem;
       margin-right: 20%;
       background-color: $zero-color;
       overflow: hidden;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
       @media screen and (max-width: $tableWidth) {
         min-width: 130%;
         margin-right: 0;

@@ -3,17 +3,24 @@
   margin-bottom: 3.333rem;
   
   .skills__items {
-    margin-top: 1.833rem;
-    margin-left: 2.875rem;
-    @media screen and (max-width: 1300px) {
-      margin-left: 1.042rem;
+    margin-top: -0.51rem;
+    margin-left: -1.21rem;
+    width: 29rem;
+    @media screen and (max-width: 1500px) {
+      margin-left: -2.21rem;
+      width: 22rem;
+    }
+    @media screen and (max-width: 1150px) {
+      margin-left: -2.21rem;
+      width: 18rem;
     }
     @media screen and (max-width: $smDesktopWidth) {
-      margin-left: 2.708rem;
+      margin: auto;
+      width: 18rem;
     }
-    @media screen and (max-width: 527px) {
-      margin-left: auto;
-    }
+    // @media screen and (max-width: 527px) {
+    //   margin-left: auto;
+    // }
   }
 }
    

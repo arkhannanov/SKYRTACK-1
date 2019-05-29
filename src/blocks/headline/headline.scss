@@ -18,12 +18,17 @@
   .headline__text {
     color: $borders;
     margin-left: 0.58rem;
-    $min_font_size: 22px;
+    $min_font_size: 40px;
     $max_font_size: 62px;
     margin-bottom: 0.4rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    @include fluid-type(100px, $tableWidth, $min_font_size, $max_font_size);
+    @include fluid-type(500px, 1500px, $min_font_size, $max_font_size);
+    // @media screen and (max-width: 1150px) {
+    //   $min_font_size: 40px;
+    //   $max_font_size: 62px;
+    //   @include fluid-type($smDesktopWidth, 1150px, $min_font_size, $max_font_size);
+    // }
   }
     
   .headline__line {
