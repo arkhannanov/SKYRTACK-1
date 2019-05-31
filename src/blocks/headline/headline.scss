@@ -6,7 +6,7 @@
     flex-direction: column;
   }
 
-  .headline__image {
+  .headline__image-container {
     @media screen and (max-width: $tableWidth ) {
       transform: scale(0.8);
     }
