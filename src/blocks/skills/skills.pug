@@ -1,12 +1,12 @@
-mixin skills(options = {source: "./img/skills-icon.png", title: "skills", name1: "creative", nod1: "9", name2: "teamwork", nod2: "11", name3: "innovate", nod3: "6", name4: "communication", nod4: "11"})
-    -let {source= "./img/skills-icon.png", title= "profile", name1= "creative",  nod1= "9",  name2= "teamwork", nod2= "11", name3= "innovate", nod3= "6", name4= "communication", nod4= "11"} = options;
+mixin skills(options = {source: "./img/skills-icon.png", title: "skills", FirstSkill: "creative", FirstSkillNumber: "9", SecondSkill: "teamwork", SecondSkillNumber: "11", ThirdSkill: "innovate", ThirdSkillNumber: "6", FourthSkill: "communication", FourthSkillNumber: "11"})
+    -let {source= "./img/skills-icon.png", title= "profile", firstSkill= "creative",  firstSkillNumber= "9",  secondSkill= "teamwork", secondSkillNumber= "11", thirdSkill= "innovate", thirdSkillNumber= "6", fourthSkill= "communication", fourthSkillNumber= "11"} = options;
     .skills
         .skills__headline
             include ../headline/headline.pug
             +headline( source, title)
         .skills__items
             include ../skills-filled-points/skills-filled-points.pug
-            +skills-filled-points(name1, nod1)
-            +skills-filled-points(name2, nod2)
-            +skills-filled-points(name3, nod3)
-            +skills-filled-points(name4, nod4)
+            +skills-filled-points(firstSkill, firstSkillNumber)
+            +skills-filled-points(secondSkill, secondSkillNumber)
+            +skills-filled-points(thirdSkill, thirdSkillNumber)
+            +skills-filled-points(fourthSkill, fourthSkillNumber)

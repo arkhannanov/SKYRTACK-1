@@ -1,5 +1,5 @@
-mixin software(options = {source: "./img/software-icon.png", title: "software", name1: "photoshop", nod1: "91", name2: "illustrator", nod2: "70", name3: "indesign", nod3: "55", name4: "dreamweaver", nod4: "84", name5: "after effects", nod5: "62", name6: "html&css3", nod6: "91"})
-    -let {source= "./img/software-icon.png", title= "software", name1= "photoshop",  nod1= "91",  name2= "illustrator", nod2= "70", name3= "indesign", nod3= "55", name4= "dreamweaver", nod4= "84", name5= "after effects", nod5= "62", name6= "html&css3", nod6= "91"} = options;
+mixin software(options = {source: "./img/software-icon.png", title: "software", firstSkill: "photoshop", firstSkillNumber: "91", secondSkill: "illustrator", secondSkillNumber: "70", thirdSkill: "indesign", thirdSkillNumber: "55", fouthSkill: "dreamweaver", fouthSkillNumber: "84", fifthSkill: "after effects", fifthSkillNumber: "62", sixthSkill: "html&css3", sixthSkillNumber: "91"})
+    -let {source= "./img/software-icon.png", title= "software", firstSkill= "photoshop",  firstSkillNumber= "91",  secondSkill= "illustrator", secondSkillNumber= "70", thirdSkill= "indesign", thirdSkillNumber= "55", fouthSkill= "dreamweaver", fouthSkillNumber= "84", fifthSkill= "after effects", fifthSkillNumber= "62", sixthSkill= "html&css3", sixtShkillNumber= "91"} = options;
     .software
         .software__headline
             include ../headline/headline.pug
@@ -7,10 +7,10 @@ mixin software(options = {source: "./img/software-icon.png", title: "software", 
         .software__items
             include ../software-bar/software-bar.pug
             .software__items_left-column
-                +progress-bar(name1, nod1)
-                +progress-bar(name2, nod2)
-                +progress-bar(name3, nod3)
+                +progress-bar(firstSkill, firstSkillNumber)
+                +progress-bar(secondSkill, secondSkillNumber)
+                +progress-bar(thirdSkill, thirdSkillNumber)
             .software__items_right-column
-                +progress-bar(name4, nod4)
-                +progress-bar(name5, nod5)
-                +progress-bar(name6, nod6)
+                +progress-bar(fouthSkill, fouthSkillNumber)
+                +progress-bar(fifthSkill, fifthSkillNumber)
+                +progress-bar(sixthSkill, sixtShkillNumber)
