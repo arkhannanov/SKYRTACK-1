@@ -38,18 +38,18 @@ mixin page
                 })
                    
                 +skills({
-                    source: "./img/skills-icon.png", 
-                    title: "skills", 
-                    firstSkill: "creative", 
-                    firstSkillNumber: "9", 
-                    secondSkill: "teamwork", 
-                    secondSkillNumber: "11", 
-                    thirdSkill: "innovate", 
-                    thirdSkillNumber: "6", 
-                    fourthSkill: "communication", 
-                    fourthSkillNumber: "11"
+                    headline: {
+                        source: "./img/skills-icon.png", 
+                        title: "skills",
+                    },
+                    skills: [
+                        {skill: "creative", level: "9"},
+                        {skill: "teamwork", level: "11"},
+                        {skill: "innovate", level: "6"},
+                        {skill: "communication", level: "11"},
+                    ]
                 })
-
+                
             section.page__column.page__column_position-right
                 +education({
                     source: "./img/education-icon.png", 
@@ -76,18 +76,16 @@ mixin page
                 })
                     
                 +software({
-                    source: "./img/software-icon.png",
-                    title: "software", 
-                    firstSkill: "photoshop", 
-                    firstSkillNumber: "91", 
-                    secondSkill: "illustrator", 
-                    secondSkillNumber: "70", 
-                    thirdSkill: "indesign", 
-                    thirdSkillNumber: "55", 
-                    fouthSkill: "dreamweaver", 
-                    fouthSkillNumber: "84", 
-                    fifthSkill: "after effects", 
-                    fifthSkillNumber: "62", 
-                    sixthSkill: "html&css3", 
-                    sixthSkillNumber: "91"
+                    headline: {
+                        source: "./img/software-icon.png",
+                        title: "software", 
+                    },
+                    skills: [
+                        {skill: "photoshop", level: "91"},
+                        {skill: "illustrator", level: "70"},
+                        {skill: "indesign", level: "55" },
+                        {skill: "dreamweaver", level: "84"},
+                        {skill: "after effects", level: "62" },
+                        {skill: "html&css3", level: "91"},
+                    ]
                 })

@@ -1,12 +1,11 @@
-mixin skills(options = {source: "", title: "", FirstSkill: "", FirstSkillNumber: "", SecondSkill: "", SecondSkillNumber: "", ThirdSkill: "", ThirdSkillNumber: "", FourthSkill: "", FourthSkillNumber: ""})
-    -let {source, title, firstSkill,  firstSkillNumber,  secondSkill, secondSkillNumber, thirdSkill, thirdSkillNumber, fourthSkill, fourthSkillNumber} = options;
+mixin skills(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
     .skills
         .skills__headline
             include ../headline/headline.pug
-            +headline( source, title)
+            +headline( options.headline.source, options.headline.title)
         .skills__items
             include ../skills-filled-points/skills-filled-points.pug
-            +skills-filled-points(firstSkill, firstSkillNumber)
-            +skills-filled-points(secondSkill, secondSkillNumber)
-            +skills-filled-points(thirdSkill, thirdSkillNumber)
-            +skills-filled-points(fourthSkill, fourthSkillNumber)
+            - var i = 0;
+            while i < 4
+                +skills-filled-points(options.skills[i].skill, options.skills[i].level)
+                - i++;

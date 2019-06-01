@@ -1,16 +1,17 @@
-mixin software(options = {source: "", title: "", firstSkill: "", firstSkillNumber: "", secondSkill: "", secondSkillNumber: "", thirdSkill: "", thirdSkillNumber: "", fouthSkill: "", fouthSkillNumber: "", fifthSkill: "", fifthSkillNumber: "", sixthSkill: "", sixthSkillNumber: ""})
-    -let {source, title, firstSkill,  firstSkillNumber,  secondSkill, secondSkillNumber, thirdSkill, thirdSkillNumber, fouthSkill, fouthSkillNumber, fifthSkill, fifthSkillNumber, sixthSkill, sixtShkillNumber} = options;
+mixin software(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
     .software
         .software__headline
             include ../headline/headline.pug
-            +headline(source, title)
+            +headline(options.headline.source, options.headline.title)
         .software__items
             include ../software-bar/software-bar.pug
             .software__items_left-column
-                +progress-bar(firstSkill, firstSkillNumber)
-                +progress-bar(secondSkill, secondSkillNumber)
-                +progress-bar(thirdSkill, thirdSkillNumber)
+                - var i = 0;
+                while i < 3
+                    +progress-bar(options.skills[i].skill, options.skills[i].level)
+                    - i++;
             .software__items_right-column
-                +progress-bar(fouthSkill, fouthSkillNumber)
-                +progress-bar(fifthSkill, fifthSkillNumber)
-                +progress-bar(sixthSkill, sixtShkillNumber)
+                - var i = 3;
+                while (i > 2) && (i < 6) 
+                    +progress-bar(options.skills[i].skill, options.skills[i].level)
+                    - i++;
