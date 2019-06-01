@@ -5,7 +5,7 @@
   flex-direction:row;
   margin-left: -0.08rem;
 
-  .education-item__dot-container {
+  &__dot-container {
     margin-right: 5%;
     margin-top: 0.5%;
     align-self: flex-start;
@@ -28,7 +28,7 @@
     }
   }
 
-  .education-item__content {    
+  &__content {    
     display: flex;
     flex-direction: column;
     margin-bottom: -0.208rem;

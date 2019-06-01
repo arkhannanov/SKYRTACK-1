@@ -1,18 +1,18 @@
 .profile {
   width: 100%;
 
-  .profile__headline {
+  &__headline {
     width:100%;
   }
 
-  .profile__text {
+  &__text {
     margin-bottom: 2.917rem;
     margin-top: 0.3rem;
     $min_font_size: 17px;
     $max_font_size: 24px;
     line-height: 1.23;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
-    .profile__text_bold {
+    &_bold {
       font-family: $boldFont;
     }
   }

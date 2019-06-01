@@ -1,7 +1,7 @@
 .software {
   width: 100%;
   
-  .software__items {
+  &__items {
     margin-top: 4%;
     width: 100%;
     margin-bottom: -30%;
@@ -15,12 +15,12 @@
       margin-left: -1.5rem;
     }
 
-    .software__items_left-column {
+    &_left-column {
       width: 50%;
       margin-left: 0.5rem;
     }
 
-    .software__items_right-column {
+    &_right-column {
       width: 50%;
       margin-left: 5rem;
       @media screen and (max-width: $tableWidth) {
