@@ -1,5 +1,5 @@
-mixin contact(options = {source: "./img/phone-icon.png", title: "contact", address: "Main Street, City.", email: "contact@domain.com.", phone: "555-555-555", website: "www.yourweb.com"})
-    -let {source="./img/phone-icon.png", title="contact", address ="Main Street, City.", email= "contact@domain.com.", phone= "555-555-555", website= "www.yourweb.com"} = options;
+mixin contact(options = {source: "", title: "", address: "", email: "", phone: "", website: ""})
+    -let {source, title, address, email, phone, website} = options;
     .contact
         .contact__header
             include ../headline/headline.pug

@@ -1,5 +1,5 @@
-mixin skills(options = {source: "./img/skills-icon.png", title: "skills", FirstSkill: "creative", FirstSkillNumber: "9", SecondSkill: "teamwork", SecondSkillNumber: "11", ThirdSkill: "innovate", ThirdSkillNumber: "6", FourthSkill: "communication", FourthSkillNumber: "11"})
-    -let {source= "./img/skills-icon.png", title= "profile", firstSkill= "creative",  firstSkillNumber= "9",  secondSkill= "teamwork", secondSkillNumber= "11", thirdSkill= "innovate", thirdSkillNumber= "6", fourthSkill= "communication", fourthSkillNumber= "11"} = options;
+mixin skills(options = {source: "", title: "", FirstSkill: "", FirstSkillNumber: "", SecondSkill: "", SecondSkillNumber: "", ThirdSkill: "", ThirdSkillNumber: "", FourthSkill: "", FourthSkillNumber: ""})
+    -let {source, title, firstSkill,  firstSkillNumber,  secondSkill, secondSkillNumber, thirdSkill, thirdSkillNumber, fourthSkill, fourthSkillNumber} = options;
     .skills
         .skills__headline
             include ../headline/headline.pug

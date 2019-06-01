@@ -1,5 +1,5 @@
-mixin education(options = {source: "./img/education-icon.png", title: "education", degree: "master degree", date: "// Feb 2011 - Jun 2014", universityname: "university name", text: "Lorem"})
-    -let {source= "./img/education-icon.png", title= "education", degree= "master degree", date= "// Feb 2011 - Jun 2014", universityname= "university name", text= "text"} = options;
+mixin education(options = {source: "", title: "", degree: "", date: "", universityname: "", text: ""})
+    -let {source, title, degree, date, universityname, text} = options;
     .education
         .education__headline
             include ../headline/headline.pug

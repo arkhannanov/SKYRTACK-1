@@ -1,5 +1,5 @@
-mixin profile(options = {source: "./img/profile-icon.png", title: "profile", text: "text", bold:"text"})
-    -let {source= "./img/profile-icon.png", title= "profile", text= "text", bold= "text"} = options;
+mixin profile(options = {source: "", title: "", text: "", bold:""})
+    -let {source, title, text, bold} = options;
     .profile
         .profile__headline
             include ../headline/headline.pug

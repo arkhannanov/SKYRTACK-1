@@ -1,5 +1,5 @@
-mixin avatar(options = {name:"name", surname:"surname", title:"graphic designer"})
-    -let {name= "name", surname= "surname", title= "graphic designer"} = options;
+mixin avatar(options = {name: "", surname:"", title:""})
+    -let {name, surname, title} = options;
     .avatar
         .avatar__border 
             .avatar__photo 
