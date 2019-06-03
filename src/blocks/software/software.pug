@@ -1,7 +1,8 @@
+ include ../headline/headline.pug
+ 
 mixin software(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
     .software
         .software__headline
-            include ../headline/headline.pug
             +headline(options.headline.source, options.headline.title)
         .software__items
             include ../software-bar/software-bar.pug

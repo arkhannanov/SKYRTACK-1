@@ -1,7 +1,8 @@
+include ../headline/headline.pug
+
 mixin skills(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
     .skills
         .skills__headline
-            include ../headline/headline.pug
             +headline( options.headline.source, options.headline.title)
         .skills__items
             include ../skills-filled-points/skills-filled-points.pug

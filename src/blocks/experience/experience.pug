@@ -1,8 +1,9 @@
+include ../headline/headline.pug
+
 mixin experience(options = {source: "", title: "", companyname: "", date: "", job: "", text: ""})
     -let {source, title, companyname, date, job, text} = options;
     .experience
         .experience__headline
-            include ../headline/headline.pug
             +headline( source, title )
         .experience__item
             include ../experience-item/experience-item.pug

@@ -1,8 +1,9 @@
+include ../headline/headline.pug
+
 mixin education(options = {source: "", title: "", degree: "", date: "", universityname: "", text: ""})
     -let {source, title, degree, date, universityname, text} = options;
     .education
         .education__headline
-            include ../headline/headline.pug
             +headline( source, title)
         .education__item
             include ../education-item/education-item.pug

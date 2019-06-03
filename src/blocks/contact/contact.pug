@@ -1,8 +1,9 @@
+include ../headline/headline.pug
+
 mixin contact(options = {source: "", title: "", address: "", email: "", phone: "", website: ""})
     -let {source, title, address, email, phone, website} = options;
     .contact
         .contact__header
-            include ../headline/headline.pug
             +headline(source, title)
         .contact__item
             .contact__item__container-header address 
