@@ -6,6 +6,9 @@ include ../education/education.pug
 include ../experience/experience.pug
 include ../software/software.pug
 include ../headline/headline.pug
+include ../education-item/education-item.pug
+ include ../experience-item/experience-item.pug
+
 
 mixin page
     main.page
@@ -48,35 +51,93 @@ mixin page
                         {skill: "creative", level: "9"},
                         {skill: "teamwork", level: "11"},
                         {skill: "innovate", level: "6"},
-                        {skill: "communication", level: "11"},
+                        {skill: "communication", level: "11"}
                     ]
                 })
                 
             section.page__column.page__column_position-right
+            
                 +education({
-                    source: "./img/education-icon.png", 
-                    title: "education", 
-                    degree: "master degree", 
-                    date: "// Feb 2011 - Jun 2014", 
-                    universityname: "university name", 
-                    text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
-                      et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-                      felis, ultricies nec, pellentesque.`
+                    headline: {
+                        source: "./img/education-icon.png", 
+                        title: "education"
+                    },
+                    content: [
+                        { 
+                            degree: "master degree", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            universityname: "university name", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                            felis, ultricies nec, pellentesque.`
+                        },
+                        {
+                            degree: "master degree", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            universityname: "university name", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                                felis, ultricies nec, pellentesque.`
+                        },
+                        { 
+                            degree: "master degree", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            universityname: "university name", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                                felis, ultricies nec, pellentesque.`
+                        },
+                        { 
+                            degree: "master degree", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            universityname: "university name", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                                felis, ultricies nec, pellentesque.`
+                        }
+                    ]
                 })
                     
                 +experience({
-                    source: "./img/experience-icon.png", 
-                    title: "experience", 
-                    companyname: "company name", 
-                    date: "// Feb 2011 - Jun 2014", 
-                    job: "Your job here", 
-                    text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
-                      magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                      ultricies nec, pellentesque.`
+                    headline: {
+                        source: "./img/experience-icon.png", 
+                        title: "experience"
+                    },
+                    content: [
+                        { 
+                            companyname: "company name", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            job: "Your job here", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                            felis, ultricies nec, pellentesque.`
+                        },
+                        {
+                            companyname: "company name", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            job: "Your job here", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                                felis, ultricies nec, pellentesque.`
+                        },
+                        { 
+                            companyname: "company name", 
+                            date: "// Feb 2011 - Jun 2014", 
+                            job: "Your job here", 
+                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+                                felis, ultricies nec, pellentesque.`
+                        }
+                    ]
                 })
-                    
+
                 +software({
                     headline: {
                         source: "./img/software-icon.png",
@@ -88,6 +149,6 @@ mixin page
                         {skill: "indesign", level: "55" },
                         {skill: "dreamweaver", level: "84"},
                         {skill: "after effects", level: "62" },
-                        {skill: "html&css3", level: "91"},
+                        {skill: "html&css3", level: "91"}
                     ]
                 })

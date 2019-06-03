@@ -1,11 +1,9 @@
-mixin education(options = {source: "", title: "", degree: "", date: "", universityname: "", text: ""})
-    -let {source, title, degree, date, universityname, text} = options;
+mixin education(options ={headline: {source: "", title: ""}, content:[{degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}]})
     .education
         .education__headline
-            +headline( source, title)
+            +headline( options.headline.source, options.headline.title)
         .education__item
-            include ../education-item/education-item.pug
-            +education-item( degree, date, universityname, text)
-            +education-item( degree, date, universityname, text)
-            +education-item( degree, date, universityname, text)
-            +education-item( degree, date, universityname, text)
+            - var i = 0;
+                while i < 4
+                    +education-item(options.content[i].degree, options.content[i].date, options.content[i].universityname, options.content[i].text)
+                    - i++;
