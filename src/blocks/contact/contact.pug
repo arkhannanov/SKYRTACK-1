@@ -4,14 +4,14 @@ mixin contact(options = {source: "", title: "", address: "", email: "", phone: "
         .contact__header
             +headline(source, title)
         .contact__item
-            .contact__item__container-header address 
-            a.contact__item__container-content= address
+            .contact__item-header address 
+            a.contact__item-content= address
         .contact__item
-            .contact__item__container-header e-mail 
-            a(href=`mailto: ${email}`, class="contact__item__container-content")= email 
+            .contact__item-header e-mail 
+            a(href=`mailto: ${email}`, class="contact__item-content")= email 
         .contact__item
-            .contact__item__container-header phone
-            a(href=`tel: ${phone}`, class="contact__item__container-content")= phone
+            .contact__item-header phone
+            a(href=`tel: ${phone}`, class="contact__item-content")= phone
         .contact__item
-            .contact__item__container-header website
-            a(href= website, target="_blank", rel="noopener noreferrer", class="contact__item__container-content")= website
+            .contact__item-header website
+            a(href= website, target="_blank", rel="noopener noreferrer", class="contact__item-content")= website
