@@ -17,7 +17,7 @@
   
   &__text {
     color: $borders;
-    margin-left: 0.58rem;
+    margin: 0;
     $min_font_size: 40px;
     $max_font_size: 62px;
     margin-bottom: 0.4rem;
@@ -25,6 +25,7 @@
     font-family: $boldFont;
     vertical-align: middle;
     text-transform: uppercase;
+    margin-left: 0.58rem;
     @include fluid-type(500px, 1500px, $min_font_size, $max_font_size);
   }
     
