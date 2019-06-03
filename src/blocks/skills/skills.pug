@@ -3,7 +3,6 @@ mixin skills(options = {headline:{ source: "", title: "", }, skills: [{skill: ""
         .skills__headline
             +headline( options.headline.source, options.headline.title)
         .skills__items
-            include ../skills-filled-points/skills-filled-points.pug
             - var i = 0;
             while i < 4
                 +skills-filled-points(options.skills[i].skill, options.skills[i].level)

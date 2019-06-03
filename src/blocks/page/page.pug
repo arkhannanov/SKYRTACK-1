@@ -7,8 +7,9 @@ include ../experience/experience.pug
 include ../software/software.pug
 include ../headline/headline.pug
 include ../education-item/education-item.pug
- include ../experience-item/experience-item.pug
-
+include ../experience-item/experience-item.pug
+include ../software-bar/software-bar.pug
+include ../skills-filled-points/skills-filled-points.pug
 
 mixin page
     main.page
@@ -56,7 +57,7 @@ mixin page
                 })
                 
             section.page__column.page__column_position-right
-            
+
                 +education({
                     headline: {
                         source: "./img/education-icon.png", 

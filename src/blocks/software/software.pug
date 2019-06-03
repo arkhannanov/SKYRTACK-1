@@ -3,7 +3,6 @@ mixin software(options = {headline:{ source: "", title: "", }, skills: [{skill: 
         .software__headline
             +headline(options.headline.source, options.headline.title)
         .software__items
-            include ../software-bar/software-bar.pug
             .software__items_left-column
                 - var i = 0;
                 while i < 3
