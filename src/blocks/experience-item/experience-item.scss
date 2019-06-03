@@ -34,7 +34,7 @@
       margin-top: -0.1rem;
       margin-left: -0.7rem;
 
-      .experience-item__content-company-name {
+      .experience-item__company-name-date-wrapper {
         line-height: 0.9;
 
         .experience-item__company-name {   
@@ -70,7 +70,7 @@
         @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
       }
       
-      .experience-item__content-content {
+      .experience-item__content-wrapper {
         margin-top: -1.2rem;
         $min_font_size: 17px;
         $max_font_size: 24px;

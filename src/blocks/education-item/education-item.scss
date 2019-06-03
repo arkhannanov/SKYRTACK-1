@@ -35,7 +35,7 @@
     margin-left: -0.75rem;
     margin-top: -0.1rem;
 
-    .education-item__content-degree {
+    .education-item__degree-wrapper {
       line-height: 0.9;
 
       .education-item__degree {   
@@ -70,7 +70,7 @@
       @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
     }
 
-    .education-item__content-content {
+    .education-item__content-wrapper {
       margin-top: -1.2rem;
       margin-left: 0.9rem;
       $min_font_size: 17px;

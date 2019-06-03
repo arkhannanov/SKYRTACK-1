@@ -3,10 +3,10 @@ mixin education-item( degree, date, university_name, content)
         .education-item__dot-container
             .education-item__dot
         .education-item__content
-            .education-item__content-degree
+            .education-item__degree-wrapper
                 p.education-item__degree= degree
                     span.education-item__date= date
-            .education-item__content-university-name
+            .education-item__university-name-wrapper
                 p.education-item__university-name= university_name
-            .education-item__content-content
+            .education-item__content-wrapper
                 p.education-item__content= content
