@@ -1,13 +1,14 @@
+include ../avatar/avatar.pug
+include ../profile/profile.pug
+include ../contact/contact.pug
+include ../skills/skills.pug
+include ../education/education.pug
+include ../experience/experience.pug
+include ../software/software.pug
+
 mixin page
     main.page
         .page__wrapper
-            include ../avatar/avatar.pug
-            include ../profile/profile.pug
-            include ../contact/contact.pug
-            include ../skills/skills.pug
-            include ../education/education.pug
-            include ../experience/experience.pug
-            include ../software/software.pug
             section.page__column.page__column_position-left
 
                 +avatar({
