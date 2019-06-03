@@ -15,7 +15,7 @@
       margin-left: 20%;
     }
   
-    .contact__item__container-header {
+    &__container-header {
       width: 8.2rem; 
       color: $borders;
       font-family: $boldFont;
@@ -26,7 +26,7 @@
         width: 4.792rem;
         $min_font_size: 20px;
         $max_font_size: 24px;
-        @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+      @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
       }
   
       @media screen and (max-width: $smDesktopWidth) {
@@ -42,13 +42,12 @@
         @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
       }
     }
-    
     a {
       color: #000000;
       text-decoration: none;
     }
     
-    .contact__item__container-content {
+    &__container-content {
       font-family: $mainFont;
       color: #000000;
       white-space: nowrap;
