@@ -12,8 +12,9 @@
     $max_font_size: 24px;
     line-height: 1.23;
     @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
-    &_bold {
-      font-family: $boldFont;
-    }
+  }
+
+  &__marked-text {
+    font-family: $boldFont;
   }
 }
