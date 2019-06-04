@@ -1,9 +1,10 @@
-mixin skills(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
+mixin skills(options = {headline:{source: "", title: "", }, skills:[]})
+    -let { headline, skills } = options;
+    -let { source, title } = headline; 
     .skills
         .skills__headline
-            +headline( options.headline.source, options.headline.title)
+            +headline(source, title)
         .skills__items
-            - var i = 0;
-            while i < 4
-                +skills-filled-points(options.skills[i].skill, options.skills[i].level)
-                - i++;
+            each item in skills
+                -let {skill, level} = item;
+                +skills-filled-points(skill, level)
