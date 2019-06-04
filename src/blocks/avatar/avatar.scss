@@ -34,36 +34,36 @@
       width: 5.0rem;
       height: 5.0rem;  
     }
-
-    .avatar__photo {   
-      height: 13.1rem;
-      width: 13.1rem;
-      border-radius: 50%;
-      background: $borders;
-      margin: 0.542rem;
-      margin-top: 0.81rem;
-      margin-left: 0.84rem;
-
-      @media screen and (max-width: 1150px) {
-        width: 9.404rem;
-        height: 9.404rem;
-        margin: 0.53rem;
-      }
-
-      @media screen and (max-width: $tableWidth) {
-        width: 6.717rem;
-        height: 6.717rem; 
-        margin: 0.390rem;
-      }
-
-      @media screen and (max-width: 375px) {
-        width: 4.478rem;
-        height: 4.478rem;
-        margin: 0.260rem;
-      }
-    }   
   }
+    
+  &__photo {   
+    height: 13.1rem;
+    width: 13.1rem;
+    border-radius: 50%;
+    background: $borders;
+    margin: 0.542rem;
+    margin-top: 0.81rem;
+    margin-left: 0.84rem;
 
+    @media screen and (max-width: 1150px) {
+      width: 9.404rem;
+      height: 9.404rem;
+      margin: 0.53rem;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+      width: 6.717rem;
+      height: 6.717rem; 
+      margin: 0.390rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 4.478rem;
+      height: 4.478rem;
+      margin: 0.260rem;
+    }
+  }   
+  
   &__name {
     line-height: 80%;
     letter-spacing: 5px;
@@ -82,7 +82,6 @@
       $max_font_size: 80px;
       @include fluid-type($smDesktopWidth, 1920px, $min_font_size, $max_font_size);
     }
-    
   }
 
   &__surname {
