@@ -8,10 +8,10 @@ mixin contact(options = {source: "", title: "", address: "", email: "", phone: "
             a.contact__item-content= address
         .contact__item
             .contact__item-header e-mail 
-            a(href=`mailto: ${email}`, class="contact__item-content")= email 
+            a.contact__item-content(href=`mailto: ${email}`)= email 
         .contact__item
             .contact__item-header phone
-            a(href=`tel: ${phone}`, class="contact__item-content")= phone
+            a.contact__item-content(href=`tel: ${phone}`)= phone
         .contact__item
             .contact__item-header website
-            a(href= website, target="_blank", rel="noopener noreferrer", class="contact__item-content")= website
+            a.contact__item-content(href= website, target="_blank", rel="noopener noreferrer")= website
