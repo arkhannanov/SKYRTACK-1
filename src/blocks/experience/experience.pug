@@ -1,10 +1,10 @@
-mixin experience(options ={headline: {source: "", title: ""}, content:[{companyName: "", date: "", job: "", text: ""}, {companyName: "", date: "", job: "", text: ""}, {companyName: "", date: "", job: "", text: ""}]})
-    -let {source, title, companyName, date, job, text} = options;
+mixin experience(options ={headline: {source: "", title: ""}, contentContainer:[]})
+    -let { headline, contentContainer} = options;
+    -let { source, title } = headline;
     .experience
         .experience__headline
-            +headline( options.headline.source, options.headline.title )
-        .experience__item
-            - var i = 0;
-                    while i < 3
-                        +experience-item(options.content[i].companyName, options.content[i].date, options.content[i].job, options.content[i].text)
-                        - i++;
+            +headline( source, title )
+        .experience__items-container
+            -contentContainer.forEach(function(item) {
+                    +education-experience-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
+            -});

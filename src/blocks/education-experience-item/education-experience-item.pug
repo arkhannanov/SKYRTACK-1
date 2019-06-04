@@ -1,0 +1,12 @@
+mixin education-experience-item(firstLineFirstPositionColor,firstLineFirstPositionContent, date, secondLine, content)
+    .education-experience-item
+        .education-experience-item__dot-container
+            .education-experience-item__dot
+        .education-experience-item__content
+            .education-experience-item__first-line-first-position-content-wrapper
+                p(class= "education-experience-item__first-line-first-position-content_"+firstLineFirstPositionColor)= firstLineFirstPositionContent
+                    span.education-experience-item__date= date
+            .education-experience-item__second-line-wrapper
+                p.education-experience-item__second-line= secondLine
+            .education-experience-item__content-wrapper
+                p.education-experience-item__content= content

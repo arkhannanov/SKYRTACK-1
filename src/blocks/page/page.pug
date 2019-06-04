@@ -6,8 +6,7 @@ include ../education/education.pug
 include ../experience/experience.pug
 include ../software/software.pug
 include ../headline/headline.pug
-include ../education-item/education-item.pug
-include ../experience-item/experience-item.pug
+include ../education-experience-item/education-experience-item.pug
 include ../software-bar/software-bar.pug
 include ../skills-filled-points/skills-filled-points.pug
 
@@ -63,75 +62,82 @@ mixin page
                         source: "./img/education-icon.png", 
                         title: "education"
                     },
-                    content: [
+                    contentContainer: [
                         { 
-                            degree: "master degree", 
+                            firstLineFirstPositionColor: "blue",
+                            firstLineFirstPositionContent: "master degree", 
                             date: "// Feb 2011 - Jun 2014", 
-                            universityName: "university name", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "university name", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
                             felis, ultricies nec, pellentesque.`
                         },
-                        {
-                            degree: "master degree", 
+                        { 
+                            firstLineFirstPositionColor: "blue",
+                            firstLineFirstPositionContent: "master degree", 
                             date: "// Feb 2011 - Jun 2014", 
-                            universityName: "university name", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "university name", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-                                felis, ultricies nec, pellentesque.`
+                            felis, ultricies nec, pellentesque.`
                         },
                         { 
-                            degree: "master degree", 
+                            firstLineFirstPositionColor: "blue",
+                            firstLineFirstPositionContent: "master degree", 
                             date: "// Feb 2011 - Jun 2014", 
-                            universityName: "university name", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "university name", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-                                felis, ultricies nec, pellentesque.`
+                            felis, ultricies nec, pellentesque.`
                         },
                         { 
-                            degree: "master degree", 
+                            firstLineFirstPositionColor: "blue",
+                            firstLineFirstPositionContent: "master degree", 
                             date: "// Feb 2011 - Jun 2014", 
-                            universityName: "university name", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "university name", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-                                felis, ultricies nec, pellentesque.`
+                            felis, ultricies nec, pellentesque.`
                         }
                     ]
                 })
-                    
+                     
                 +experience({
                     headline: {
                         source: "./img/experience-icon.png", 
                         title: "experience"
                     },
-                    content: [
+                    contentContainer: [
                         { 
-                            companyName: "company name", 
+                            firstLineFirstPositionColor: "black",
+                            firstLineFirstPositionContent: "company name", 
                             date: "// Feb 2011 - Jun 2014", 
-                            job: "Your job here", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "Your job here", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
                             felis, ultricies nec, pellentesque.`
                         },
                         {
-                            companyName: "company name", 
+                            firstLineFirstPositionColor: "black",
+                            firstLineFirstPositionContent: "company name", 
                             date: "// Feb 2011 - Jun 2014", 
-                            job: "Your job here", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "Your job here", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
                                 felis, ultricies nec, pellentesque.`
                         },
-                        { 
-                            companyName: "company name", 
+                        {
+                            firstLineFirstPositionColor: "black",
+                            firstLineFirstPositionContent: "company name", 
                             date: "// Feb 2011 - Jun 2014", 
-                            job: "Your job here", 
-                            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            secondLine: "Your job here", 
+                            content: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
                                 et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
                                 felis, ultricies nec, pellentesque.`
