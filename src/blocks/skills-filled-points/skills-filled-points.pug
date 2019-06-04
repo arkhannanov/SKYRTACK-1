@@ -1,10 +1,10 @@
-mixin skills-filled-points( headline, number_of_dots)
+mixin skills-filled-points( headline, numberOfDots)
     .skills-filled-points
         p.skills-filled-points__headline= headline
         .skills-filled-points__points-container
             - var i = 0;
             while i < 12
-                if i < number_of_dots
+                if i < numberOfDots
                     .skills-filled-points_filled-point
                 else
                     .skills-filled-points_empty-point

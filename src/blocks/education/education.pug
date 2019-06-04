@@ -1,9 +1,9 @@
-mixin education(options ={headline: {source: "", title: ""}, content:[{degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}, {degree: "", date: "", universityname: "", text: ""}]})
+mixin education(options ={headline: {source: "", title: ""}, content:[{degree: "", date: "", universityName: "", text: ""}, {degree: "", date: "", universityName: "", text: ""}, {degree: "", date: "", universityName: "", text: ""}, {degree: "", date: "", universityName: "", text: ""}]})
     .education
         .education__headline
             +headline( options.headline.source, options.headline.title)
         .education__item
             - var i = 0;
                 while i < 4
-                    +education-item(options.content[i].degree, options.content[i].date, options.content[i].universityname, options.content[i].text)
+                    +education-item(options.content[i].degree, options.content[i].date, options.content[i].universityName, options.content[i].text)
                     - i++;
