@@ -1,5 +1,6 @@
-mixin progress-bar( programm, value)    
+mixin software-bar( programm, value)    
     .software-bar
-        p.software-bar__headline= programm
-        .software-bar__progress
-            progress(value= value, max="100", class='software-bar__progress-bar')
+        .software-bar__wrapper
+            p.software-bar__headline= programm
+            .software-bar__progress
+                progress(value= value, max="100", class='software-bar__progress-bar')

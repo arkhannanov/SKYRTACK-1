@@ -1,15 +1,10 @@
-mixin software(options = {headline:{ source: "", title: "", }, skills: [{skill: "", level: ""}, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}, {skill: "", level: "" }, {skill: "", level: ""}]})
+mixin software(options = {headline:{ source: "", title: "", }, skills: []})
+    -let { headline, skills } = options;
+    -let { source, title } = headline; 
     .software
         .software__headline
-            +headline(options.headline.source, options.headline.title)
+            +headline( source, title)
         .software__items
-            .software__items_left-column
-                - var i = 0;
-                while i < 3
-                    +progress-bar(options.skills[i].skill, options.skills[i].level)
-                    - i++;
-            .software__items_right-column
-                - var i = 3;
-                while (i > 2) && (i < 6) 
-                    +progress-bar(options.skills[i].skill, options.skills[i].level)
-                    - i++;
+            each item in skills
+                -let {skill, level} = item;
+                +software-bar(skill, level)

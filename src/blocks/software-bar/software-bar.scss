@@ -1,6 +1,11 @@
 .software-bar {
-  width: 100%;
+  width: 50%;
   margin-bottom: 0.5rem;
+
+  &__wrapper {
+    width: 86%;
+    margin-left: 0.6rem;
+  }
 
   &__headline {
     width: 100%;
