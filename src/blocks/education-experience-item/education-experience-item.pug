@@ -4,7 +4,7 @@ mixin education-experience-item(firstLineFirstPositionColor,firstLineFirstPositi
             .education-experience-item__dot
         .education-experience-item__content
             .education-experience-item__first-line-first-position-content-wrapper
-                p(class= "education-experience-item__first-line-first-position-content_"+firstLineFirstPositionColor)= firstLineFirstPositionContent
+                p(class= `education-experience-item__first-line-first-position-content_${firstLineFirstPositionColor}`)= firstLineFirstPositionContent
                     span.education-experience-item__date= date
             .education-experience-item__second-line-wrapper
                 p.education-experience-item__second-line= secondLine
