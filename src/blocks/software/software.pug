@@ -8,5 +8,5 @@ mixin software(options = {headline:{ source: "", title: "" }, skills: []})
             +headline( source, title)
         .software__items
             each item in skills
-                -let {skill, level} = item;
-                +software-bar(skill, level)
+                -let {skill, level, maxValue} = item;
+                +software-bar(skill, level, maxValue)
