@@ -10,9 +10,7 @@
   &__headline {
     width: 100%;
     font-family: $mainFont;
-    $min_font_size: 20px;
-    $max_font_size: 40px;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+    font-size: 1.667rem;
     margin-block-start: 0.5%;
     margin-block-end: 0.333rem;
     text-transform: uppercase;

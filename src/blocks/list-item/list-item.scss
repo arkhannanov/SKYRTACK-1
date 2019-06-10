@@ -41,15 +41,13 @@
   }
   
   &__first-line-first-position-content_blue {   
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
     color: $borders;
     font-family: $mainFontColor;
     font-family: $boldFont;
-    $min_font_size: 24px;
-    $max_font_size: 40px;
+    font-size: 1.667rem;
     text-transform: uppercase;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
   }
 
   &__first-line-first-position-content_black  {   
@@ -58,10 +56,8 @@
     color: $mainFontColor;
     font-family: $mainFontColor;
     font-family: $boldFont;
-    $min_font_size: 24px;
-    $max_font_size: 40px;
+    font-size: 1.667rem;
     text-transform: uppercase;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
   }
   
   &__date {
@@ -77,19 +73,15 @@
     color:$mainFontColor;
     font-family: $lightFont;
     margin-top: 0.2rem;
-    $min_font_size: 24px;
-    $max_font_size: 40px;
+    font-size: 1.667rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);   
+    text-transform: uppercase; 
   }
 
   &__content-wrapper {
     margin-top: -1.2rem;
     margin-left: 0.9rem;
-    $min_font_size: 17px;
     line-height: 1.225;
-    $max_font_size: 24px;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
+    font-size: 1rem;
   }
 }

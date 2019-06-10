@@ -8,8 +8,6 @@
     display: flex;
     flex-direction:row;
     align-items: center;
-    // justify-content: flex-start;
-    align-items: center;
     margin-top: 0.85rem;
     @media screen and (max-width: $smDesktopWidth) {
       margin-left: 20%;
@@ -24,22 +22,16 @@
       margin-top: 0.74rem;
       @media screen and (max-width: 1300px) {
         width: 4.792rem;
-        $min_font_size: 20px;
-        $max_font_size: 24px;
-      @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+        font-size: 1rem;
       }
   
       @media screen and (max-width: $smDesktopWidth) {
         width: 7.292rem;
-        $min_font_size: 14px;
-        $max_font_size: 24px;
-        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+        font-size: 1rem;
       } 
       @media screen and (max-width: 510px) {
         width: 4.292rem;
-        $min_font_size: 14px;
-        $max_font_size: 24px;
-        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+        font-size: 1rem;
       }
     }
     
@@ -54,16 +46,13 @@
       font-size: 1.35rem;
       margin-top: 0.74rem;
       @media screen and (max-width: 1300px) {
-      min-width: 4.792rem;
-      $min_font_size: 20px;
-      $max_font_size: 24px;
-      position: relative;
-      @include fluid-type($smDesktopWidth, 1300px, $min_font_size, $max_font_size);
+        min-width: 4.792rem;
+        font-size: 1rem;
+        position: relative;
       }
       @media screen and (max-width: $smDesktopWidth) {
         $min_font_size: 14px;
-        $max_font_size: 24px;
-        @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
+        font-size: 1rem;
       }
     }
   }

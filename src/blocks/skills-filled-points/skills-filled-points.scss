@@ -10,10 +10,8 @@
     margin-left: 0.46rem;
     font-family: $mainFont;
     letter-spacing: 1px;
-    $min_font_size: 20px;
-    $max_font_size: 38px;
+    font-size: 1.583rem;
     text-transform: uppercase;
-    @include fluid-type(100px, $desktopWidth, $min_font_size, $max_font_size);
   }
 
   &__points-container {
