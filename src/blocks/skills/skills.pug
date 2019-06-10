@@ -1,6 +1,5 @@
 mixin skills(options = {headline:{source: "", title: "", }, skills:[]})
-    -let { headline, skills } = options;
-    -let { source, title } = headline; 
+    -let { headline:{ source, title }, skills } = options;
     .skills
         .skills__headline
             +headline(source, title)

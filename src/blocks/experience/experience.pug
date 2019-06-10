@@ -1,6 +1,5 @@
 mixin experience(options ={headline: {source: "", title: ""}, contentContainer:[]})
-    -let { headline, contentContainer} = options;
-    -let { source, title } = headline;
+    -let { headline:{ source, title }, contentContainer} = options;
     .experience
         .experience__headline
             +headline( source, title )

@@ -1,6 +1,5 @@
 mixin software(options = {headline:{ source: "", title: "" }, skills: []})
-    -let { headline, skills } = options;
-    -let { source, title } = headline; 
+    -let { headline: { source, title }, skills } = options;
     .software
         .software__headline
             +headline( source, title)
