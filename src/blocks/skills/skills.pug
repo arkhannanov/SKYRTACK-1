@@ -5,5 +5,5 @@ mixin skills(options = {headline:{source: "", title: "", }, skills:[]})
             +headline(source, title)
         .skills__items
             each item in skills
-                -let {skill, level} = item;
-                +skills-filled-points(skill, level)
+                -let {skill, level, maxAmountOfDots} = item;
+                +skills-filled-points(skill, level, maxAmountOfDots)
