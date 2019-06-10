@@ -1,3 +1,6 @@
+include ../headline/headline.pug
+include ../software-bar/software-bar.pug
+
 mixin software(options = {headline:{ source: "", title: "" }, skills: []})
     -let { headline: { source, title }, skills } = options;
     .software

@@ -1,3 +1,6 @@
+include ../headline/headline.pug
+include ../skills-filled-points/skills-filled-points.pug
+
 mixin skills(options = {headline:{source: "", title: "", }, skills:[]})
     -let { headline:{ source, title }, skills } = options;
     .skills

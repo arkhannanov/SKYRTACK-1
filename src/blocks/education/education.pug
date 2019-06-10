@@ -1,3 +1,6 @@
+include ../headline/headline.pug
+include ../list-item/list-item.pug
+
 mixin education(options ={ headline: {source: "", title: ""}, contentContainer: []})
     -let { headline: { source, title }, contentContainer} = options;
     .education
