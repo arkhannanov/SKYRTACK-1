@@ -20,11 +20,6 @@ $smPhoneWidth            : 320px;
 $borders                 : #3d6cb0;
 $zero-color 			 : #e6e6e6;
 
-
-@function strip-unit($value) {
-    @return $value / ($value * 0 + 1);
-  }
-  
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
     $u1: unit($min-vw);
     $u2: unit($max-vw);

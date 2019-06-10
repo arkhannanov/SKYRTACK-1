@@ -4,7 +4,7 @@ mixin education(options ={ headline: {source: "", title: ""}, contentContainer: 
     .education
         .education__headline
             +headline( source, title)
-        .education__items-container
+        .education__items-list
             -contentContainer.forEach(function(item) {
-                    +education-experience-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
+                    +list-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
             -});

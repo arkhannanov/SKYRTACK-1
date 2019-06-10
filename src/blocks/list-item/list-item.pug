@@ -1,0 +1,12 @@
+mixin list-item(firstLineFirstPositionColor,firstLineFirstPositionContent, date, secondLine, content)
+    .list-item
+        .list-item__dot-container
+            .list-item__dot
+        .list-item__content
+            .list-item__first-line-first-position-content-wrapper
+                p(class= `list-item__first-line-first-position-content_${firstLineFirstPositionColor}`)= firstLineFirstPositionContent
+                    span.list-item__date= date
+            .list-item__second-line-wrapper
+                p.list-item__second-line= secondLine
+            .list-item__content-wrapper
+                p.list-item__content= content

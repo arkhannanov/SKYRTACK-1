@@ -4,7 +4,7 @@ mixin experience(options ={headline: {source: "", title: ""}, contentContainer:[
     .experience
         .experience__headline
             +headline( source, title )
-        .experience__items-container
+        .experience__items-list
             -contentContainer.forEach(function(item) {
-                    +education-experience-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
+                    +list-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
             -});
