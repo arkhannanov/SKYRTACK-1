@@ -42,11 +42,11 @@
         @include fluid-type(100px, $smDesktopWidth, $min_font_size, $max_font_size);
       }
     }
-    a {
+    
+    &-content {
       color: #000000;
       text-decoration: none;
     }
-    
     &-content {
       font-family: $mainFont;
       color: #000000;
