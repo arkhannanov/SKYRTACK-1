@@ -8,5 +8,5 @@ mixin education(options ={ headline: {source: "", title: ""}, contentContainer: 
             +headline( source, title)
         .education__items-list
             -contentContainer.forEach(function(item) {
-                    +list-item(item.firstLineFirstPositionColor, item.firstLineFirstPositionContent, item.date, item.secondLine, item.content)
+                    +list-item(item.color, item.degree, item.date, item.job, item.content)
             -});
