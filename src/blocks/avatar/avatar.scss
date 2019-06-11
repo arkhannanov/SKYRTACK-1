@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 3.333rem;
   margin: 0; 
   font-family: $boldFont;
   margin-top: 0.8rem; 
@@ -17,7 +17,7 @@
     width: 14.817rem;
     height: 14.817rem;
      
-    border: 2px solid $borders;
+    border: 0.083rem solid $borders;
     border-radius: 50%;
 
     @media screen and (max-width: 1150px) {
@@ -66,7 +66,7 @@
   
   &__name {
     line-height: 80%;
-    letter-spacing: 5px;
+    letter-spacing: 0.208rem;
     font-family: $lightFont;
     top: 2.3rem;
     left: 0.1rem;
@@ -89,7 +89,7 @@
   
   &__title {
     line-height: 200%;
-    letter-spacing: -1px;
+    letter-spacing: -0.042rem;
     font-size: 1.583rem;
     top: -0.833rem;
     margin-block-start: 0;

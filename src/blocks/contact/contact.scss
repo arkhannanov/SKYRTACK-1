@@ -51,7 +51,6 @@
         position: relative;
       }
       @media screen and (max-width: $smDesktopWidth) {
-        $min_font_size: 14px;
         font-size: 1rem;
       }
     }
