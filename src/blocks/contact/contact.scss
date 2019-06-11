@@ -36,15 +36,14 @@
     }
     
     &-content {
-      color: #000000;
-      text-decoration: none;
-    }
-    &-content {
       font-family: $mainFont;
       color: #000000;
       white-space: nowrap;
       font-size: 1.35rem;
       margin-top: 0.74rem;
+      color: #000000;
+      text-decoration: none;
+      word-break: break-all;
       @media screen and (max-width: 1300px) {
         min-width: 4.792rem;
         font-size: 1rem;
