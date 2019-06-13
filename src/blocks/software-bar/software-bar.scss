@@ -40,15 +40,6 @@
       background-color: $borders;
     }
 
-    &-bar::-moz-progress-bar {
-      background-color: $borders;
-    }
-
-    &-bar::-ms-fill {
-      background-color: $borders;
-      border:0;
-    }
-    
     /* necessary to style the progress bar background */
     ::-webkit-progress-bar {
       background-color: $zero-color ; 
