@@ -8,7 +8,6 @@
   }
 
   &__headline {
-    width: 100%;
     font-family: $mainFont;
     font-size: 1.667rem;
     margin-block-start: 0.5%;
@@ -20,7 +19,6 @@
   }
 
   &__progress {
-    width: 100%;
 
     &-bar { 
       min-width: 103%;
