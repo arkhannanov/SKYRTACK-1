@@ -1,8 +1,10 @@
 @font-face {
-    font-family: 'Myriad-Pro-Bold';
+    font-family: 'Myriad-Pro';
     src: url('myriad-pro-bold.eot');
     src: url('myriad-pro-bold.eot') format('embedded-opentype'),
     	 url('myriad-pro-bold.woff') format('woff'),
          url('myriad-pro-bold.ttf') format('truetype'),
          url('myriad-pro-bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
