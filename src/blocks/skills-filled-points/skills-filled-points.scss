@@ -1,15 +1,15 @@
 .skills-filled-points {
   max-width: 70%;
   margin: auto;
-  margin-bottom: -0.417rem;
+  margin-bottom: -0.35rem;
 
   &__headline {
     color: $mainFontColor;
     text-align: center;
     margin-bottom: 0.292rem;
     margin-left: 0.46rem;
-    font-weight: bold;
-    letter-spacing: -0.03rem;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
     font-size: 1.583rem;
     text-transform: uppercase;
   }
