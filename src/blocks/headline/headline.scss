@@ -20,13 +20,13 @@
     color: $borders;
     margin: 0;
     font-size: 2.58rem;
-    margin-bottom: 0.4rem;
     letter-spacing: 0.063rem;
     font-weight: bold;
     vertical-align: middle;
     text-transform: uppercase;
     margin-left: 0.58rem;
     word-break: break-all;
+    margin-bottom: 0.3rem;
   }
     
   &__line {
@@ -34,7 +34,6 @@
     flex-grow: 1;
     background-color:$borders;
     margin-left: 0.4rem;
-    margin-bottom: 0.5rem;
     @media screen and (max-width: 510px) {
       display: none;
     }

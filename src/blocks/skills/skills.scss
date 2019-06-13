@@ -6,14 +6,11 @@
   
   &__items {
     margin-top: 1.2rem;
-    margin-left: -1.21rem;
     width: 29rem;
     @media screen and (max-width: 1500px) {
-      margin-left: -2.21rem;
       width: 22rem;
     }
     @media screen and (max-width: 1150px) {
-      margin-left: -2.21rem;
       width: 18rem;
     }
     @media screen and (max-width: $smDesktopWidth) {

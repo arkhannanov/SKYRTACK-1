@@ -1,15 +1,13 @@
 .list-item {   
  
   &__wrapper {
-    margin-top: 2.3rem;
-    margin-bottom: -0.525rem;
-    margin-left: -0.08rem;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction:row;
   }
 
   &__dot-container {
-    margin-right: 5%;
+    margin-right: 3%;
     margin-top: 0.5%;
     align-self: flex-start;
   }
@@ -19,7 +17,7 @@
     height: 1.285rem;
     width: 1.285rem;
     border-radius: 50%;
-    margin-top: -0.07rem;
+    margin-top: 0.04rem;
     margin-left: 0.9rem;
     @media screen and (max-width: $desktopWidth) {
       height: 1rem;
@@ -34,9 +32,6 @@
   &__content {    
     display: flex;
     flex-direction: column;
-    margin-bottom: -0.208rem;
-    margin-left: -0.75rem;
-    margin-top: -0.1rem;
   }
   
   &__degree_blue {   
@@ -69,7 +64,7 @@
     
   &__job {
     margin-block-start: 0.5%;
-    margin-block-end: 4%;
+    margin-block-end: 0.5%;
     color:$mainFontColor;
     font-weight: lighter;
     margin-top: 0.2rem;
@@ -79,14 +74,11 @@
   }
 
   &__content-container {
-    margin-top: -0.13rem;
-    margin-left: -0.7rem;
+    
   }
   &__content {
-    margin-top: -1.3rem;
     margin-left: 0.16rem;
     line-height: 1.225rem;
     font-size: 1rem;
-    margin-bottom: -0.9rem;
   }
 }

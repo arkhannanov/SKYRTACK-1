@@ -2,14 +2,15 @@
   
   &__wrapper {
     margin: auto;
-    margin-bottom: 1.25rem;
-    width: 70%;
+    margin-bottom: 1.15rem;
+    width: 70.5%;
+    margin-right: 19%;
   }
 
   &__headline {
     color: $mainFontColor;
     text-align: center;
-    margin-bottom: 0.292rem;
+    margin-bottom: 0.5rem;
     margin-left: 0.46rem;
     font-weight: lighter;
     letter-spacing: 0.05rem;
@@ -22,8 +23,7 @@
     flex-direction:row;
     justify-content: space-between;
     margin-top: 0.4rem;
-    margin-left: -0.15rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   &_filled-point {
