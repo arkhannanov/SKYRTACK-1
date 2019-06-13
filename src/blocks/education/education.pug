@@ -4,9 +4,10 @@ include ../list-item/list-item.pug
 mixin education(options ={ headline: {source: "", title: ""}, contentContainer: []})
     -let { headline: { source, title }, contentContainer} = options;
     .education
-        .education__headline
-            +headline( source, title)
-        .education__items-list
-            -contentContainer.forEach(function(item) {
-                    +list-item(item.color, item.degree, item.date, item.job, item.content)
-            -});
+        .education__wrapper
+            .education__headline
+                +headline( source, title)
+            .education__items-list
+                -contentContainer.forEach(function(item) {
+                        +list-item(item.color, item.degree, item.date, item.job, item.content)
+                -});

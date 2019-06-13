@@ -1,8 +1,9 @@
 mixin avatar(options = {name: "", surname:"", title:""})
     -let {name, surname, title} = options;
     .avatar
-        .avatar__border 
-            .avatar__photo 
-        .avatar__name= name
-        .avatar__surname= surname
-        .avatar__title= title
+        .avatar__wrapper
+            .avatar__border 
+                .avatar__photo 
+            .avatar__name= name
+            .avatar__surname= surname
+            .avatar__title= title

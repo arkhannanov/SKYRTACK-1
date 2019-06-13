@@ -4,9 +4,12 @@
   flex-direction: column;
   justify-content: center;
   font-weight: bold;
-  margin-top: 0.8rem; 
-  margin-left: 1.25rem;
-  margin-bottom: 4.8rem; 
+  
+  &__wrapper {
+    margin-top: 0.8rem; 
+    margin-left: 1.25rem;
+    margin-bottom: 4.8rem;
+  }
 
   &__border {   
     margin: auto;

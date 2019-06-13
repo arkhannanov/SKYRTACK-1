@@ -1,9 +1,12 @@
 .list-item {   
-  margin-top: 2.3rem;
-  margin-bottom: -0.525rem;
-  display: flex;
-  flex-direction:row;
-  margin-left: -0.08rem;
+ 
+  &__wrapper {
+    margin-top: 2.3rem;
+    margin-bottom: -0.525rem;
+    margin-left: -0.08rem;
+    display: flex;
+    flex-direction:row;
+  }
 
   &__dot-container {
     margin-right: 5%;

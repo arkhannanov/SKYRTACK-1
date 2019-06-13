@@ -3,17 +3,18 @@ include ../headline/headline.pug
 mixin contact(options = {source: "", title: "", address: "", email: "", phone: "", website: ""})
     -let {source, title, address, email, phone, website} = options;
     .contact
-        .contact__header
-            +headline(source, title)
-        .contact__item
-            .contact__item-header address 
-            a.contact__item-content= address
-        .contact__item
-            .contact__item-header e-mail 
-            a.contact__item-content(href=`mailto: ${email}`)= email 
-        .contact__item
-            .contact__item-header phone
-            a.contact__item-content(href=`tel: ${phone}`)= phone
-        .contact__item
-            .contact__item-header website
-            a.contact__item-content(href= website, target="_blank", rel="noopener noreferrer")= website
+        .contact__wrapper
+            .contact__header
+                +headline(source, title)
+            .contact__item
+                .contact__item-header address 
+                a.contact__item-content= address
+            .contact__item
+                .contact__item-header e-mail 
+                a.contact__item-content(href=`mailto: ${email}`)= email 
+            .contact__item
+                .contact__item-header phone
+                a.contact__item-content(href=`tel: ${phone}`)= phone
+            .contact__item
+                .contact__item-header website
+                a.contact__item-content(href= website, target="_blank", rel="noopener noreferrer")= website

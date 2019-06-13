@@ -1,8 +1,11 @@
 .skills {
-  margin-bottom: 3.333rem;
+
+  &__wrapper {
+    margin-bottom: 3.333rem;
+  }
   
   &__items {
-    margin-top: -0.51rem;
+    margin-top: 1.2rem;
     margin-left: -1.21rem;
     width: 29rem;
     @media screen and (max-width: 1500px) {
