@@ -40,7 +40,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+          options: { sourceMap: true, config: { path: 'postcss.config.js' } }
         }, {
           loader: 'resolve-url-loader'
           // options: {sourceMap: true }
@@ -63,7 +63,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+          options: { sourceMap: true, config: { path: 'postcss.config.js' } }
         }
       ]
     },
@@ -102,8 +102,8 @@ module.exports = {
         inject: true
     }),
     new CopyWebpackPlugin([
-      { from: PATHS.src + '/img', to: `img` },
-      { from: PATHS.src + '/img/favicons', to: `img/favicons` }
+      { from: PATHS.src + '/blocks/headline/images', to: `headline/images` },
+      { from: PATHS.src + '/images/favicons', to: `images/favicons` }
     ]), 
   ]
 }
