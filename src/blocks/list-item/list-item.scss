@@ -12,10 +12,10 @@
   }
 
   &__dot {
-    background: $mainFontColor;
     height: 1.285rem;
     width: 1.285rem;
     border-radius: 50%;
+    background-color: $mainFontColor;
     margin: 0.04rem 0 0 0.9rem;
 
     @media screen and (max-width: $desktopWidth) {
@@ -56,13 +56,11 @@
   
   &__date {
     margin-left: 0.9rem;
-    color:$mainFontColor;
     font-weight: normal;
     text-transform: none;
   }
     
   &__job {
-    color:$mainFontColor;
     font-weight: lighter;
     margin: 0.2rem 0 0.2rem 0;
     font-size: 1.667rem;
