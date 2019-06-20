@@ -1,22 +1,19 @@
 .skills-filled-points {
   
   &__wrapper {
-    margin: auto;
-    margin-bottom: 1.15rem;
     width: 70.5%;
-    margin-right: 19%;
     line-height: 2.25rem;
+    margin: 1.1rem 19% 1.15rem auto;
   }
 
   &__headline {
     color: $mainFontColor;
     text-align: center;
-    margin-bottom: 0.5rem;
-    margin-left: 0.46rem;
     font-weight: lighter;
     letter-spacing: 0.05rem;
     font-size: 1.583rem;
     text-transform: uppercase;
+    margin: 0 0 0.5rem 0.46rem;
   }
 
   &__points-container {
@@ -30,11 +27,13 @@
     background: $borders;
     height: 1.1rem;
     width: 1.1rem;
-    border-radius: 50%; 
+    border-radius: 50%;
+
     @media screen and (max-width: $smDesktopWidth) {
       height: 0.708rem;
       width: 0.708rem;
-    }            
+    }
+
     @media screen and (max-width: $tableWidth) {
       height: 0.625rem;
       width: 0.625rem;
@@ -46,10 +45,12 @@
     height: 1.1rem;
     width: 1.1rem;
     border-radius: 50%;
+
     @media screen and (max-width: $smDesktopWidth) {
       height: 0.708rem;
       width: 0.708rem;
-    }            
+    }
+
     @media screen and (max-width: $tableWidth) {
       height: 0.625rem;
       width: 0.625rem;

@@ -1,24 +1,25 @@
 .page {
   
   &__wrapper {
-    margin-left: 3.875rem;
-    margin-top: 4.9rem;
-    margin-right: 3.708rem;
+    margin: 4.9rem 3.708rem 0 3.875rem;
     display: flex;
     justify-content: space-between;
+
     @media screen and (max-width: $smDesktopWidth) {
       flex-wrap: wrap;
     }
+
     @media screen and (max-width: 530px) {
-      margin-left: 1.875rem;
-      margin-right: 1.708rem;
+      margin: 0 1.708rem 0 1.875rem;
     }
+
   }
 
   &__column_position-left {
     background-color: #FFF;
     width: 37.2%;
     margin-right: 7,29%;
+
     @media screen and (max-width: $smDesktopWidth ) {
     width: 100%;
     margin-right: 0;
@@ -28,6 +29,7 @@
   &__column_position-right {
     background-color: #fff;
     width: 55.98%;
+
     @media screen and (max-width: $smDesktopWidth ) {
       width: 100%;
     }

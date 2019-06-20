@@ -3,18 +3,16 @@
   
   &__wrapper {
     width: 86%;
-    margin-left: 0.5rem;
-    margin-bottom: 0.15rem;
     line-height: 2rem;
+    margin: 0 0 0.15rem 0.5rem;
   }
 
   &__headline {
     font-weight: normal;
     font-size: 1.667rem;
-    margin-block-start: 0.5%;
-    margin-block-end: 0.333rem;
     text-transform: uppercase;
     word-break: break-all;
+    margin: 0.5% 0 0.333rem 0;
   }
 
   &__progress {
@@ -23,15 +21,15 @@
       min-width: 103%;
       border: 0; /* for IE */
       height: 1.35rem;
-      margin-right: 20%;
       background-color: $zero-color;
       overflow: hidden;
-      margin-top: 0.3rem;
-      margin-bottom: 1rem;
+      margin: 0.3rem 20% 1rem 0;
+
       @media screen and (max-width: $tableWidth) {
         min-width: 130%;
         margin-right: 0;
       }
+
       @media screen and (max-width: $phoneWidth) {
         min-width: 80% ;
       }

@@ -18,15 +18,13 @@
   
   &__text {
     color: $borders;
-    margin: 0;
     font-size: 2.58rem;
     letter-spacing: 0.063rem;
     font-weight: bold;
     vertical-align: middle;
     text-transform: uppercase;
-    margin-left: 0.58rem;
     word-break: break-all;
-    margin-bottom: 0.3rem;
+    margin: 0 0 0.3rem  0.58rem;
   }
     
   &__line {
