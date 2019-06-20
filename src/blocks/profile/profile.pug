@@ -3,7 +3,8 @@ include ../headline/headline.pug
 mixin profile(options = {source: "", title: "", text: "", bold:""})
     -let {source, title, text, bold} = options;
     .profile
-        .profile__headline
-            +headline(source, title)
-        .profile__text= text
-            span.profile__marked-text= bold
+        .profile__wrapper
+            .profile__headline
+                +headline(source, title)
+            .profile__text= text
+                span.profile__marked-text= bold

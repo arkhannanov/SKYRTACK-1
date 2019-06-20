@@ -10,6 +10,8 @@
     flex-direction:row;
     align-items: center;
     margin-top: 0.92rem;
+    line-height: 1.9rem;
+
     @media screen and (max-width: $smDesktopWidth) {
       margin-left: 20%;
     }
@@ -42,7 +44,6 @@
       white-space: nowrap;
       font-size: 1.35rem;
       margin-top: 0.74rem;
-      color: #000000;
       text-decoration: none;
       word-break: break-all;
       @media screen and (max-width: 1300px) {
