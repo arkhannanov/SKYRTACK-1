@@ -4,6 +4,7 @@
     margin: 4.9rem 3.708rem 0 3.875rem;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
     @media screen and (max-width: $smDesktopWidth) {
       flex-wrap: wrap;

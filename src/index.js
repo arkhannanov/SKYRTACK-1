@@ -6,9 +6,9 @@ const faviconsContext = require.context(
 
 faviconsContext.keys().forEach(faviconsContext);
 
-function importAll(resolve) {
-    resolve.keys().forEach(resolve);
-  }
-  
-importAll(require.context('./', true, /\.(scss)$/));
+function requireAll(r) {
+    return r.keys().map(r);
+}
+
+requireAll(require.context('./', true, /\.js|scss$/));
 
